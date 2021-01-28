@@ -1,0 +1,44 @@
+---
+title: "Brendan J. Kelly"
+image: "bjk_headshot.jpg"
+links:
+  - label: Twitter
+    url: "https://twitter.com/bjk_lab"
+  - label: GitHub
+    url: "https://github.com/bjklab"
+  - label: PubMed
+    url: "https://www.ncbi.nlm.nih.gov/myncbi/12Ouj3rJSdIka/bibliography/public/"
+  - label: CV
+    url: "bjk_cv.rtf"
+#site: distill::distill_website
+output:
+  postcards::trestles
+---
+ 
+Brendan J. Kelly, M.D., M.S., studies infectious diseases and epidemiology at the University of Pennsylvania. His research focuses on microbial ecosystems in humans at high risk for infection. Dr. Kelly seeks to understand properties of microbial ecosystems that protect against infection, how microbial ecosystems are altered by antibiotics, and how microbial ecosystems recover from infection and antibiotic treatment. He has performed large, clinical-translational studies to better understand pneumonia and intestinal infections that occur in the setting of critical illness. Dr. Kelly's work has been supported by the National Institute of Allergy and Infectious Diseases (NIAID) and the Centers for Diseases Control and Prevention (CDC).  
+  
+  
+## Education  
+  
+**University of Pennsylvania** | Philadelphia, PA  
+M.S. in Clinical Epidemiology | July 2011 - August 2013  
+  
+**Columbia University College of Physicians & Surgeons** | New York, NY  
+M.D. | August 2002 - June 2007  
+  
+**Harvard University** | Cambridge, MA  
+A.B. in History and Science | September 1998 - June 2002  
+  
+  
+## Appointments
+  
+**Assistant Professor of Medicine & Epidemiology** | Perelman School of Medicine | University of Pennsylvania  
+  
+**Senior Scholar** | Center for Clinical Epidemiology & Biostatistics | University of Pennsylvania  
+  
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
