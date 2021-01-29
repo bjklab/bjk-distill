@@ -1,14 +1,13 @@
 ---
-title: "Welcome to BJK blog"
+title: "Welcome!"
 description: |
-  Welcome to our new blog, BJK blog. We hope you enjoy 
-  reading what we have to say!
+  Welcome. I hope you enjoy reading about my work.
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: 01-28-2021
+  - name: Brendan J. Kelly 
+    url: https://github.com/bjklab
+    affiliation: University of Pennsylvania
+    affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+date: 01-16-2021
 output:
   distill::distill_article:
     self_contained: false

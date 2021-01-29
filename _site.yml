@@ -1,8 +1,8 @@
 name: "BJK lab"
 title: "Brendan J. Kelly"
 description: |
-  BJK lab blog
-output_dir: "_site"
+  BJK lab website
+output_dir: "docs"
 navbar:
 #  logo:
 #    image: microscope.png

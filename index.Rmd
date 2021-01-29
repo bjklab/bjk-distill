@@ -4,10 +4,10 @@ image: "bjk_headshot_circle.png"
 links:
   - label: PubMed
     url: "https://www.ncbi.nlm.nih.gov/myncbi/12Ouj3rJSdIka/bibliography/public/"
-  - label: CV
-    url: "bjk_cv.rtf"
   - label: GitHub
     url: "https://github.com/bjklab"
+  - label: CV
+    url: "bjk_cv.pdf"
   - label: Twitter
     url: "https://twitter.com/bjk_lab"
 site: distill::distill_website

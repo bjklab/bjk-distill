@@ -25,7 +25,7 @@ html {
   --aside-size:      12px;
   --fig-cap-size:    13px;
   /*-- Main font colors --*/
-  --title-color:     #000000;
+  --title-color:     #1381B0;
   --header-color:    #1381B0;
   --body-color:      #000000;
   --aside-color:     rgba(0, 0, 0, 1);
@@ -39,15 +39,15 @@ html {
 
 /*-- ARTICLE METADATA --*/
 d-byline {
-  --heading-size:    0.6rem;
-  --heading-color:   rgba(0, 0, 0, 0.5);
-  --body-size:       0.8rem;
-  --body-color:      rgba(0, 0, 0, 0.8);
+  --heading-size:    1rem;
+  --heading-color:   rgba(0, 0, 0, 1);
+  --body-size:       1rem;
+  --body-color:      rgba(0, 0, 0, 1);
 }
 
 /*-- ARTICLE TABLE OF CONTENTS --*/
 .d-contents {
-  --heading-size:    18px;
+  --heading-size:    15px;
   --contents-size:   13px;
 }
 
@@ -88,3 +88,7 @@ d-appendix {
   float: right;
   width: 47%;
 }
+h1, h2, h3, h4 {
+  font-family: var(--heading-font);
+  font-weight: 400;
+  color: var(--header-color);
