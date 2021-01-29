@@ -4,8 +4,12 @@ description: |
   BJK lab blog
 output_dir: "_site"
 navbar:
+#  logo:
+#    image: microscope.png
+#    href: https://www.ncbi.nlm.nih.gov/myncbi/12Ouj3rJSdIka/bibliography/public/
+  search: false
   right:
-    - text: "Home"
+    - text: "About"
       href: index.html
     - text: "News"
       href: news.html
