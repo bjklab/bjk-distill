@@ -4,7 +4,7 @@ description: |
   BJK lab website
 #output_dir: "_site"
 output_dir: "docs"
-favicon: microscope_blue.svg
+favicon: microscope_blue.png
 navbar:
 #  logo:
 #    image: microscope.png
