@@ -16,7 +16,7 @@ navbar:
     - text: "News"
       href: news.html
     - icon: fa fa-rss
-      href: index.xml
+      href: news.xml
     - icon: fab fa-twitter
       href: https://twitter.com/bjk_lab
     - icon: fab fa-github
