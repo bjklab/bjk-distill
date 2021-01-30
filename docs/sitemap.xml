@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://bjklab.github.io/bjk-distill/about.html</loc>
+    <loc>https://bjklab.github.io/bjk-distill/index.html/about.html</loc>
     <lastmod>2021-01-29T10:48:06-05:00</lastmod>
   </url>
   <url>
-    <loc>https://bjklab.github.io/bjk-distill/</loc>
+    <loc>https://bjklab.github.io/bjk-distill/index.html/</loc>
     <lastmod>2021-01-30T14:51:19-05:00</lastmod>
   </url>
   <url>
-    <loc>https://bjklab.github.io/bjk-distill/news.html</loc>
+    <loc>https://bjklab.github.io/bjk-distill/index.html/news.html</loc>
     <lastmod>2021-01-30T14:51:16-05:00</lastmod>
   </url>
   <url>
-    <loc>https://bjklab.github.io/bjk-distill/posts/welcome/</loc>
+    <loc>https://bjklab.github.io/bjk-distill/index.html/posts/welcome/</loc>
     <lastmod>2021-01-29T10:48:06-05:00</lastmod>
   </url>
 </urlset>
