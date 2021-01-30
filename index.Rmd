@@ -10,6 +10,7 @@ links:
     url: "bjk_cv.pdf"
   - label: Twitter
     url: "https://twitter.com/bjk_lab"
+favicon: microscope_blue.png
 site: distill::distill_website
 output:
   postcards::trestles
