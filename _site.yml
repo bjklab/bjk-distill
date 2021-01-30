@@ -4,7 +4,9 @@ description: |
   BJK lab website
 #output_dir: "_site"
 output_dir: "docs"
+base_url: https://bjklab.github.io/bjk-distill
 favicon: microscope_blue.png
+google_analytics: "G-8RX21HL654"
 navbar:
 #  logo:
 #    image: microscope.png
