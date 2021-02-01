@@ -2,12 +2,12 @@
 title: "Welcome!"
 description: |
   Welcome. I hope you enjoy reading about my work.
+date: January 16, 2021
 author:
   - name: Brendan J. Kelly 
     url: https://github.com/bjklab
     affiliation: University of Pennsylvania
     affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
-date: 01-16-2021
 output:
   distill::distill_article:
     self_contained: false
