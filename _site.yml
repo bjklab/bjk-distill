@@ -15,6 +15,10 @@ navbar:
   right:
     - text: "About"
       href: index.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Publications"
+      href: publications.html
     - text: "News"
       href: news.html
     - icon: fa fa-rss

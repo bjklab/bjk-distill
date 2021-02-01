@@ -1,0 +1,31 @@
+Abdallah HO, Weingart MF, Fuller R, Pegues D, Fitzpatrick R, Kelly BJ. Subglottic suction frequency and adverse ventilator-associated events during critical illness. Infect Control Hosp Epidemiol. 2021 Jan 11;1–7. Available from: http://dx.doi.org/10.1017/ice.2020.1298 PMID: 33423714
+
+Richard-Greenblatt M, Ziegler MJ, Bromberg V, Huang E, Abdallah HO, Tolomeo P, Lautenbach E, Glaser L, Kelly BJ. Impact of Nasopharyngeal Specimen Quality on SARS-CoV-2 Test Sensitivity. medRxiv. Cold Spring Harbor Laboratory Press; 2020 Dec 11;2020.12.09.20246520. Available from: http://dx.doi.org/10.1101/2020.12.09.20246520 PMCID: PMC7743104
+
+Redding LE, Kelly BJ, Stefanovski D, Lautenbach JK, Tolomeo P, Cressman L, Gruber E, Meily P, Lautenbach E. Pet Ownership Protects Against Recurrence of Clostridioides difficile Infection. Open Forum Infect Dis. 2020 Jan;7(1):ofz541. Available from: http://dx.doi.org/10.1093/ofid/ofz541 PMCID: PMC6969483
+
+Berry ASF, Kelly BJ, Barnhart D, Kelly DJ, Beiting DP, Baldassano RN, Redding LE. Gut microbiota features associated with Clostridioides difficile colonization in puppies. PLoS One. 2019 Aug 30;14(8):e0215497. Available from: http://dx.doi.org/10.1371/journal.pone.0215497 PMCID: PMC6716646
+
+Ziegler M, Han JH, Landsburg D, Pegues D, Reesey E, Gilmar C, Gorman T, Bink K, Moore A, Kelly BJ, CDC Prevention Epicenters Program. Impact of Levofloxacin for the Prophylaxis of Bloodstream Infection on the Gut Microbiome in Patients With Hematologic Malignancy. Open Forum Infect Dis. 2019 Jul;6(7):ofz252. Available from: http://dx.doi.org/10.1093/ofid/ofz252 PMCID: PMC6602896
+
+Kelly BJ, Lautenbach E, Han JH, Centers for Disease Control and Prevention Healthcare Associated Infection Prevention Epicenters Program. The authors reply. Critical care medicine. 2019. p. e275–e276. Available from: http://dx.doi.org/10.1097/CCM.0000000000003587 PMID: 30768528
+
+Knecht VR, McGinniss JE, Shankar HM, Clarke EL, Kelly BJ, Imai I, Fitzgerald AS, Bittinger K, Bushman FD, Collman RG. Molecular analysis of bacterial contamination on stethoscopes in an intensive care unit. Infect Control Hosp Epidemiol. 2018 Dec 18;1–7. Available from: http://dx.doi.org/10.1017/ice.2018.319 PMCID: PMC6581638
+
+Kelly BJ, Lautenbach E, Nachamkin I, Coffin SE, Gerber JS, Fuchs BD, Garrigan C, Han X, Bilker WB, Wise J, Tolomeo P, Han JH, Centers for Disease Control and Prevention (CDC) Prevention Epicenters Program. Combined Biomarkers Predict Acute Mortality Among Critically Ill Patients With Suspected Sepsis. Crit Care Med. 2018 Jul;46(7):1106–1113. Available from: http://dx.doi.org/10.1097/CCM.0000000000003137 PMCID: PMC6010038
+
+Agarwal R, Bartsch SM, Kelly BJ, Prewitt M, Liu Y, Chen Y, Umscheid CA. Newer glycopeptide antibiotics for treatment of complicated skin and soft tissue infections: systematic review, network meta-analysis and cost analysis. Clin Microbiol Infect. 2018 Apr;24(4):361–368. Available from: http://dx.doi.org/10.1016/j.cmi.2017.08.028 PMCID: PMC5925741
+
+Kelly BJ, Tebas P. Clinical Practice and Infrastructure Review of Fecal Microbiota Transplantation for Clostridium difficile Infection. Chest. 2018 Jan;153(1):266–277. Available from: http://dx.doi.org/10.1016/j.chest.2017.09.002 PMCID: PMC5812771
+
+Kelly BJ, Lautenbach E, Nachamkin I, Coffin SE, Gerber JS, Fuchs BD, Garrigan C, Han X, Bilker WB, Wise J, Tolomeo P, Han JH, Centers for Disease Control and Prevention (CDC) Prevention Epicenters Program. Combined biomarkers discriminate a low likelihood of bacterial infection among surgical intensive care unit patients with suspected sepsis. Diagn Microbiol Infect Dis. 2016 May;85(1):109–115. Available from: http://dx.doi.org/10.1016/j.diagmicrobio.2016.01.003 PMCID: PMC4841711
+
+Kelly BJ, Imai I, Bittinger K, Laughlin A, Fuchs BD, Bushman FD, Collman RG. Composition and dynamics of the respiratory tract microbiome in intubated patients. Microbiome. 2016 Feb 11;4(1):7. Available from: http://dx.doi.org/10.1186/s40168-016-0151-8 PMCID: PMC4750361
+
+Kelly BJ, Gross R, Bittinger K, Sherrill-Mix S, Lewis JD, Collman RG, Bushman FD, Li H. Power and sample-size estimation for microbiome studies using pairwise distances and PERMANOVA. Bioinformatics. 2015 Aug 1;31(15):2461–2468. Available from: http://dx.doi.org/10.1093/bioinformatics/btv183 PMCID: PMC4514928
+
+Brady T, Kelly BJ, Male F, Roth S, Bailey A, Malani N, Gijsbers R, O’Doherty U, Bushman FD. Quantitation of HIV DNA integration: effects of differential integration site distributions on Alu-PCR assays. J Virol Methods. 2013 Apr;189(1):53–57. Available from: http://dx.doi.org/10.1016/j.jviromet.2013.01.004 PMCID: PMC3608829
+
+Khiabanian H, Holmes AB, Kelly BJ, Gururaj M, Hripcsak G, Rabadan R. Signs of the 2009 influenza pandemic in the New York-Presbyterian Hospital electronic health records. PLoS One. 2010 Sep 9;5(9). Available from: http://dx.doi.org/10.1371/journal.pone.0012658 PMCID: PMC2936568
+
+Yu M, Kumar TRS, Nkrumah LJ, Coppi A, Retzlaff S, Li CD, Kelly BJ, Moura PA, Lakshmanan V, Freundlich JS, Valderramos J-C, Vilcheze C, Siedner M, Tsai JH-C, Falkard B, Sidhu ABS, Purcell LA, Gratraud P, Kremer L, Waters AP, Schiehser G, Jacobus DP, Janse CJ, Ager A, Jacobs WR Jr, Sacchettini JC, Heussler V, Sinnis P, Fidock DA. The fatty acid biosynthesis enzyme FabI plays a key role in the development of liver-stage malarial parasites. Cell Host Microbe. 2008 Dec 11;4(6):567–578. Available from: http://dx.doi.org/10.1016/j.chom.2008.11.001 PMCID: PMC2646117

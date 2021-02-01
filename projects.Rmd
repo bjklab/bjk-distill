@@ -1,0 +1,12 @@
+---
+title: "Projects"
+site: distill::distill_website
+favicon: microscope_blue.png
+---
+
+```{r, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+
+
+```
+
