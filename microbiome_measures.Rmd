@@ -1,0 +1,19 @@
+---
+title: "Measuring the Microbiome: Methods and Tools"
+site: distill::distill_website
+favicon: microscope_blue.png
+---
+
+```{r xaringan_extra_intro_mm1, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::use_share_again()
+xaringanExtra::style_share_again(
+  share_buttons = c("twitter")
+)
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_001_intro-to-microbiome-data/lecture_welcome-to-EPID674.html",
+                              ratio = "16:9")
+
+
+
+```
+
