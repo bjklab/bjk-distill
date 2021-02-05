@@ -31,6 +31,8 @@ navbar:
       href: news.xml
     - icon: fab fa-twitter
       href: https://twitter.com/bjk_lab
+    # - icon: fa fa-orcid
+    #   href: https://orcid.org/0000-0003-2023-646X
     - icon: fab fa-github
       href: https://github.com/bjklab
 collections:
