@@ -9,7 +9,7 @@ favicon: microscope_blue.png
 
 
 ```
-
+  
 ### Metagenomic and whole-genome sequencing to define resistome evolution during antibiotic exposure and long-term acute care (CDC BAA 200-2018-02919)  
   
 We are applying metagenomic sequencing to raw respiratory and gastrointestinal
