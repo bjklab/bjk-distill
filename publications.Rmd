@@ -32,8 +32,8 @@ read_lines(file = "./bib/bjk_bib.txt") %>%
     link = map(link, gt::html)) %>%
   gt() %>%
   gt::cols_label(authors = "Authors", title = "Title", journal = "Journal", link = "Link") %>%
-  gt::tab_options(table.font.size = 20,
-                  column_labels.font.size = 20,
+  gt::tab_options(table.font.size = 18,
+                  column_labels.font.size = 18,
                   table_body.hlines.color = "black",
                   column_labels.border.bottom.color = "black",
                   column_labels.border.top.color = "black",
