@@ -10,3 +10,30 @@ favicon: microscope_blue.png
 
 ```
 
+### Metagenomic and whole-genome sequencing to define resistome evolution during antibiotic exposure and long-term acute care (CDC BAA 200-2018-02919)  
+  
+We are applying metagenomic sequencing to raw respiratory and gastrointestinal
+tract specimens collected from a cohort of long-term acute care hospital (LTACH) patients with _Pseudomonas aeruginosa_ colonization to understand how commonly prescribed antibiotics impact the microbiome and resistome, as well as the evolution of _Pseudomonas_ colonization and antibiotic resistance.  
+  
+  
+### Stool microbiome features to discriminate Clostridium difficile colonization and infection (CDC BAA 200-2016-91937)  
+  
+We are performing a cross-sectional study to determine the bacterial microbiome features that discriminate _C. difficile_ infection (CDI) from _C. difficile_ colonization, as well as microbiome features associated with risk for severe CDI and recurrent CDI.   
+  
+  
+### Respiratory tract microbiome composition and risk for antibiotic-resistant lower respiratory infection during long-term acute care (CDC BAA 200-2016-91964)  
+
+We developed a cohort of long-term acute care (LTACH) patients dependent on mechanical ventilation and at high risk for lower respiratory tract infection and performed dense, longitudinal sampling of the upper and lower respiratory tract, as well as the gastrointestinal tract, in order to understand the evolution of the bacterial microbiome during critical illness and the microbiome features that portend risk for LRTI, thus improving the ability to target diagnostic and infection prevention interventions.  
+  
+  
+### Randomized clinical trial of fecal microbiota transplantation for severe and severe-complicated _C.difficile_ infection (CDC Southestern Pennsylvania Adult and Pediatric Prevention Epicenter Network)  
+  
+A phase II, randomized trial to evaluate the safety and efficacy of fecal microbiota transplantation using the Penn Microbiome Therapy products for severe or severe-complicated/fulminate _C.difficile_ infection ([NCT03970200](https://clinicaltrials.gov/ct2/show/NCT03970200)).  
+  
+  
+### Longitudinal analysis of respiratory tract microbiome change and sequence-based infection diagnosis during mechanical ventilation (K23 AI121485)
+  
+Bacterial pneumonia is a common and dangerous contributor to critical illness, during which patients depend on mechanical ventilators to assist their breathing. It may contribute to the initial need for mechanical ventilation, or it may complicate the course of mechanical ventilation. We are using deep sequencing methods to completely characterize the bacterial community of the respiratory tract over the full course of mechanical ventilation, thus improving understanding of how bacterial pneumonia occurs in critically ill patients, with implications for prevention, diagnosis, and treatment interventions.   
+  
+  
+  
