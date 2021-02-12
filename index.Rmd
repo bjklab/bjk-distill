@@ -39,9 +39,12 @@ Perelman School of Medicine | University of Pennsylvania
 **Senior Scholar**  
 Center for Clinical Epidemiology & Biostatistics | University of Pennsylvania  
   
-
-
-
+ <!-- **Director, Antibiotic Resistance and Healthcare Epidemiology Study Collaborative (ARES) Research Lab**  
+Perelman School of Medicine | University of Pennsylvania  
+  
+**Co-Director, Fecal Microbiota Transplant (FMT) Program**  
+Hospital of the University of Pennsylvania -->   
+  
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
