@@ -7,8 +7,9 @@ favicon: microscope_blue.png
 ```{r xaringan_extra_intro_epi, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
 xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
+xaringanExtra::style_share_again(foreground = "white",
+                                 background = "black",
+                                 share_buttons = "none"
 )
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Measures-of-Disease-in-Epidemiology/measures_of_disease_in_epidemiology_2020_bjk.html",
                               ratio = "16:9")
