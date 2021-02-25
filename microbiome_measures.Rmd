@@ -8,10 +8,6 @@ favicon: microscope_blue.png
 
 ```{r xaringan_extra_intro_mm1, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
-)
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_001_intro-to-microbiome-data/lecture_welcome-to-EPID674.html",
                               ratio = "16:9")
 
@@ -24,10 +20,6 @@ xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_001_intro-
 
 ```{r xaringan_extra_intro_mm2, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
-)
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_002_sequences-to-counts/lecture_sequences-to-count-data.html",
                               ratio = "16:9")
 
@@ -40,10 +32,6 @@ xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_002_sequen
   
 ```{r xaringan_extra_intro_mm5, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
-)
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_005_alpha-diversity/lecture_alpha-diversity.html",
                               ratio = "16:9")
 
@@ -55,10 +43,6 @@ xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_005_alpha-
   
 ```{r xaringan_extra_intro_mm6, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
-)
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_006_beta-diversity/lecture_beta-diversity.html",
                               ratio = "16:9")
 
@@ -70,10 +54,6 @@ xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_006_beta-d
   
 ```{r xaringan_extra_intro_mm8, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
-)
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_008_microbiome-regression/lecture_microbiome-regression.html",
                               ratio = "16:9")
 
@@ -85,10 +65,6 @@ xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_008_microb
   
 ```{r xaringan_extra_intro_mm9, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
-)
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/EPID674_009_more-microbiome-regression/lecture_more-microbiome-regression.html",
                               ratio = "16:9")
 
