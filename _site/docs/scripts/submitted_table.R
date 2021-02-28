@@ -1,11 +1,3 @@
----
-title: "Under Review"
-site: distill::distill_website
-favicon: microscope_blue.png
----
-
-```{r, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE, layout="l-body-outset", fig.width=6}
-
 #' #################################
 #' load libraries and set seed
 #' #################################
@@ -32,9 +24,9 @@ read_csv(file = "./bib/bjk_submitted.csv") %>%
   mutate(contrib_color = viridis::plasma(nrow(.),begin = 0, end = 0.9)) %>%
   mutate(contrib_label = glue::glue("<span style='color:{contrib_color}'>{value}</span>")) %>%
   identity() -> contrib_tib
-#contrib_tib
+contrib_tib
 
-#contrib_tib %>% gt() %>% fmt_markdown(columns = "contrib_label")
+contrib_tib %>% gt() %>% fmt_markdown(columns = "contrib_label")
 
 
 read_csv(file = "./bib/bjk_submitted.csv") %>%
@@ -49,15 +41,7 @@ read_csv(file = "./bib/bjk_submitted.csv") %>%
   # mutate(Category = stringr::str_replace(string = Category, pattern = contrib_tib$value[6], replacement = contrib_tib$contrib_label[6])) %>%
   gt() %>%
   fmt_markdown(columns = "Category") %>%
-  gt_black_grey() %>%
-  gt::tab_options(column_labels.font.size = 16)
+  gt_black_grey()
 
 
-
-
-
-
-
-
-```
 

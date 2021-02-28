@@ -2195,8 +2195,381 @@ Teaching
 
 
 <div class="d-article">
-<div class="layout-chunk" data-layout="l-body">
+<div class="layout-chunk" data-layout="l-body-outset">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
 
+#fbezmpitrv .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 11px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: black;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: white;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: black;
+}
+
+#fbezmpitrv .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: black;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: black;
+}
+
+#fbezmpitrv .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#fbezmpitrv .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#fbezmpitrv .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+}
+
+#fbezmpitrv .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#fbezmpitrv .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#fbezmpitrv .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#fbezmpitrv .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#fbezmpitrv .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#fbezmpitrv .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#fbezmpitrv .gt_group_heading {
+  padding: 8px;
+  color: #333333;
+  background-color: lightgrey;
+  font-size: 100%;
+  font-weight: bold;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#fbezmpitrv .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: lightgrey;
+  font-size: 100%;
+  font-weight: bold;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  vertical-align: middle;
+}
+
+#fbezmpitrv .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#fbezmpitrv .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#fbezmpitrv .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: black;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: black;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: black;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#fbezmpitrv .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: black;
+  padding-left: 12px;
+}
+
+#fbezmpitrv .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fbezmpitrv .gt_first_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: black;
+}
+
+#fbezmpitrv .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#fbezmpitrv .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: black;
+}
+
+#fbezmpitrv .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#fbezmpitrv .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+}
+
+#fbezmpitrv .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fbezmpitrv .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding: 4px;
+}
+
+#fbezmpitrv .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#fbezmpitrv .gt_sourcenote {
+  font-size: 11px;
+  padding: 4px;
+}
+
+#fbezmpitrv .gt_left {
+  text-align: left;
+}
+
+#fbezmpitrv .gt_center {
+  text-align: center;
+}
+
+#fbezmpitrv .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#fbezmpitrv .gt_font_normal {
+  font-weight: normal;
+}
+
+#fbezmpitrv .gt_font_bold {
+  font-weight: bold;
+}
+
+#fbezmpitrv .gt_font_italic {
+  font-style: italic;
+}
+
+#fbezmpitrv .gt_super {
+  font-size: 65%;
+}
+
+#fbezmpitrv .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="fbezmpitrv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Authors</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Title</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Category</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left">Brendan J. Kelly, MD, MS; Ebbing Lautenbach, MD, MPH, MSCE; Jason Roy, PhD; Ayannah S. Fitzgerald, BSN; Layla A. Khatib, BS; Ize Imai, MS; Leigh Cressman, MA; Frederic D. Bushman, PhD; Ronald G. Collman, MD </td>
+      <td class="gt_row gt_left">Interspecific interactions define respiratory Staphylococcus aureus infection risk during mechanical ventilation</td>
+      <td class="gt_row gt_left"><div class='gt_from_md'><p><span style='color:#7401A8FF'>Microbial Ecology of Bacterial Infection</span>; <span style='color:#BF3984FF'>Molecular Epidemiology of Infectious Diseases</span></p>
+</div></td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Brendan J. Kelly, MD, MS; Selamawit Bekele; Sean Loughrey; Elizabeth Huang; Pam Tolomeo, MPH; Michael Z. David, MD, PhD; Ebbing Lautenbach, MD, MPH, MS; Jennifer H. Han, MD, MS; Matthew J. Ziegler, MD, MS  for the CDC Prevention Epicenters Program</td>
+      <td class="gt_row gt_left">Healthcare Micro-Environments Define Multidrug-Resistant Organism Persistence</td>
+      <td class="gt_row gt_left"><div class='gt_from_md'><p><span style='color:#FCCE25FF'>Spatial Epidemiology of Infectious Diseases</span>; <span style='color:#BF3984FF'>Molecular Epidemiology of Infectious Diseases</span></p>
+</div></td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">Melissa Richard-Greenblatt, PhD; Matthew J. Ziegler, MD, MS; Valerie Bromberg; Elizabeth Huang; Hatem Abdallah; Pam Tolomeo, MS; Ebbing Lautenbach, MD, MPH, MS; Laurel Glaser, MD, PhD; Brendan J. Kelly, MD, MS </td>
+      <td class="gt_row gt_left">Quantifying the Impact of Nasopharyngeal Specimen Quality on SARS-CoV-2 Test Performance</td>
+      <td class="gt_row gt_left"><div class='gt_from_md'><p><span style='color:#EE7B51FF'>Novel Infectious Diseases Diagnostics</span>; <span style='color:#BF3984FF'>Molecular Epidemiology of Infectious Diseases</span></p>
+</div></td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">James J. Harrigan, MD, PharmD; Hatem Abdallah; Erik L. Clarke, PhD; Arman Oganisian, MS; Jason A. Roy, PhD; Ebbing Lautenbach, MD, MPH, MS; Emily Reesey, MS; Magda Wernovsky; Pam Tolomeo, MPH; Zygmunt Morawski; Jerry Jacob, MD, MS; Michael A. Grippi, MD; Brendan J. Kelly, MD, MS </td>
+      <td class="gt_row gt_left">Respiratory microbiome disruption and risk for ventilator-associated lower respiratory tract infection</td>
+      <td class="gt_row gt_left"><div class='gt_from_md'><p><span style='color:#BF3984FF'>Molecular Epidemiology of Infectious Diseases</span>; <span style='color:#EE7B51FF'>Novel Infectious Diseases Diagnostics</span>; <span style='color:#0D0887FF'>Antibiotic and Healthcare Impacts on the Human Microbiome</span>; <span style='color:#7401A8FF'>Microbial Ecology of Bacterial Infection</span></p>
+</div></td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

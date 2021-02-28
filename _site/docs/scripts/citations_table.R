@@ -5,6 +5,8 @@ library(tidyverse)
 #library(bibtex)
 library(gt)
 
+#' add gt formatting functions
+source("./scripts/gt_themes.R")
 
 
 #' #################################
@@ -19,18 +21,16 @@ read_lines(file = "./bib/bjk_bib.txt") %>%
   mutate(link = gsub("Available from\\: ","",link)) %>%
   separate(link, into = "link", sep = " ", remove = TRUE, extra = "drop") %>%
   filter(grepl("reply",title) == FALSE) %>%
+  mutate(year = stringr::str_extract(string = date_vol_page, pattern = paste0(seq(2000,2040,1), collapse = "|"))) %>%
   select(-date_vol_page) %>%
   mutate(
     link = glue::glue("<a href='{link}'>{link}</a>"),
     link = map(link, gt::html)) %>%
   gt() %>%
-  gt::cols_label(authors = "Authors", title = "Title", journal = "Journal", link = "Link") %>%
-  gt::tab_options(table.font.size = 20,
-                  column_labels.font.size = 20,
-                  table_body.hlines.color = "black",
-                  column_labels.border.bottom.color = "black",
-                  column_labels.border.top.color = "black",
-                  table_body.border.bottom.color = "black")
+  gt::cols_label(authors = "Authors", title = "Title", journal = "Journal", year = "Year", link = "Link") %>%
+  gt_black_grey() %>%
+  gt::tab_options(column_labels.font.size = 16)
+
 
 
 
