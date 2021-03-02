@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\nI had reason to go back to a C. difficile clinical update that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-02-18T14:43:45-05:00",
+    "last_modified": "2021-03-02T11:35:20-05:00",
     "input_file": {}
   },
   {
