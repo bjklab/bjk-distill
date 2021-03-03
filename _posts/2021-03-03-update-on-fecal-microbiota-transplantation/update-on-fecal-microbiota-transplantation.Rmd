@@ -1,0 +1,34 @@
+---
+title: "Update on Fecal Microbiota Transplantation"
+description: |
+  A slightly out-of-date FMT update.
+author:
+  - name: Brendan J. Kelly 
+    url: https://github.com/bjklab
+    affiliation: University of Pennsylvania
+    affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+date: 2021/03/03
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE)
+```
+
+I had reason to go back to an update on fecal microbiota transplantation (FMT) that I gave recently. Now slightly out-of-date, but perhaps still useful:   
+  
+  
+```{r xaringan_extra_fmt_update, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/FMT-update-2020/fmt_update_slides.html",
+                              ratio = "16:9")
+
+
+
+```
+
+
+

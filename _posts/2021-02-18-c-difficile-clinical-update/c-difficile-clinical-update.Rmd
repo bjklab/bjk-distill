@@ -23,10 +23,6 @@ I had reason to go back to a _C. difficile_ clinical update that I gave recently
   
 ```{r xaringan_extra_cdiff_update, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::use_share_again()
-xaringanExtra::style_share_again(
-  share_buttons = c("twitter")
-)
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/C-diff-clinical-update-2019/slides.html",
                               ratio = "16:9")
 

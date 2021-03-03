@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-03-03-update-on-fecal-microbiota-transplantation/",
+    "title": "Update on Fecal Microbiota Transplantation",
+    "description": "A slightly out-of-date FMT update.",
+    "author": [
+      {
+        "name": "Brendan J. Kelly",
+        "url": "https://github.com/bjklab"
+      }
+    ],
+    "date": "2021-03-03",
+    "categories": [],
+    "contents": "\nI had reason to go back to an update on fecal microbiota transplantation (FMT) that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-03-03T13:54:10-05:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-02-18-c-difficile-clinical-update/",
     "title": "C. difficile Clinical Update",
     "description": "A slightly out-of-date clinical update.",
@@ -11,9 +28,9 @@
     ],
     "date": "2021-02-18",
     "categories": [],
-    "contents": "\nI had reason to go back to a C. difficile clinical update that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n.shareagain-bar {\n--shareagain-foreground: rgb(255, 255, 255);\n--shareagain-background: rgba(0, 0, 0, 0.5);\n--shareagain-facebook: none;\n--shareagain-linkedin: none;\n--shareagain-pinterest: none;\n--shareagain-pocket: none;\n--shareagain-reddit: none;\n}\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
+    "contents": "\nI had reason to go back to a C. difficile clinical update that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-03-02T11:35:20-05:00",
+    "last_modified": "2021-03-03T13:52:53-05:00",
     "input_file": {}
   },
   {
