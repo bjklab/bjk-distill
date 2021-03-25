@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-03-25-fmt-update-for-transplant-oncology/",
+    "title": "FMT Update for Transplant Oncology",
+    "description": "Applications of fecal microbiota transplantation (FMT) to the oncology population.",
+    "author": [
+      {
+        "name": "Brendan J. Kelly",
+        "url": "https://github.com/bjklab"
+      }
+    ],
+    "date": "2021-03-25",
+    "categories": [],
+    "contents": "\nToday I gave a short talk on the development of fecal microbiota transplantation (FMT) methods and how FMT can be applied to oncology patients at risk for chemotherapy/antibiotic-related intestinal microbiota disruption and graft-versus-host-disease (GVHD).\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-03-25T14:20:22-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-03-03-update-on-fecal-microbiota-transplantation/",
     "title": "Update on Fecal Microbiota Transplantation",
     "description": "A slightly out-of-date FMT update.",
