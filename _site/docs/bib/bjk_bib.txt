@@ -1,4 +1,4 @@
-Richard-Greenblatt M, Ziegler MJ, Bromberg V, Huang E, Abdallah H, Tolomeo P, Lautenbach E, Glaser L, Kelly BJ. Quantifying the Impact of Nasopharyngeal Specimen Quality on SARS-CoV-2 Test Performance. Open Forum Infect Dis. Oxford University Press; 2021 May 12. Available from: https://academic.oup.com/ofid/advance-article/doi/10.1093/ofid/ofab235/6274487?searchresult=1
+Richard-Greenblatt M, Ziegler MJ, Bromberg V, Huang E, Abdallah H, Tolomeo P, Lautenbach E, Glaser L, Kelly BJ. Quantifying the Impact of Nasopharyngeal Specimen Quality on Severe Acute Respiratory Syndrome Coronavirus 2 Test Performance. Open Forum Infect Dis. Oxford University Press; 2021 Jun;8(6):ofab235. Available from: http://dx.doi.org/10.1093/ofid/ofab235 PMCID: PMC8136075
 
 Rhee RL, Lu J, Bittinger K, Lee J-J, Mattei LM, Sreih AG, Chou S, Miner JJ, Cohen NA, Kelly BJ, Lee H, Grayson PC, Collman RG, Merkel PA. Dynamic Changes in the Nasal Microbiome Associated with Disease Activity in Patients with Granulomatosis with Polyangiitis. Arthritis Rheumatol. 2021 Mar 7. Available from: http://dx.doi.org/10.1002/art.41723 PMID: 33682371
 
