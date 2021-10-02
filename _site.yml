@@ -50,4 +50,4 @@ collections:
 rss:
   full_content: true
 output: distill::distill_article
-theme: theme.css
+theme: theme_inferno.css

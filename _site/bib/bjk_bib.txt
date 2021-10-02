@@ -1,10 +1,12 @@
+Rhee RL, Lu J, Bittinger K, Lee J-J, Mattei LM, Sreih AG, Chou S, Miner JJ, Cohen NA, Kelly BJ, Lee H, Grayson PC, Collman RG, Merkel PA. Dynamic Changes in the Nasal Microbiome Associated With Disease Activity in Patients With Granulomatosis With Polyangiitis. Arthritis Rheumatol. 2021 Sep;73(9):1703–1712. Available from: http://dx.doi.org/10.1002/art.41723 PMCID: PMC8403103
+
+Kelly BJ, Bekele S, Loughrey S, Huang E, Tolomeo P, David MZ, Lautenbach E, Han JH, Ziegler MJ, CDC Prevention Epicenters Program. Healthcare microenvironments define multidrug-resistant organism persistence. Infect Control Hosp Epidemiol. Cambridge University Press; 2021 Aug 24;1–7. Available from: http://dx.doi.org/10.1017/ice.2021.323 PMID: 34425925
+
+Harrigan JJ, Abdallah H, Clarke EL, Oganisian A, Roy JA, Lautenbach E, Reesey E, Wernovsky M, Tolomeo P, Morawski Z, Jacob J, Grippi MA, Kelly BJ. Respiratory microbiome disruption and risk for ventilator-associated lower respiratory tract infection. Clin Infect Dis. 2021 Aug 7. Available from: http://dx.doi.org/10.1093/cid/ciab678 PMID: 34363467
+
+Abdallah HO, Weingart MF, Fuller R, Pegues D, Fitzpatrick R, Kelly BJ. Subglottic suction frequency and adverse ventilator-associated events during critical illness. Infect Control Hosp Epidemiol. 2021 Jul;42(7):826–832. Available from: http://dx.doi.org/10.1017/ice.2020.1298 PMCID: PMC8272736
+
 Richard-Greenblatt M, Ziegler MJ, Bromberg V, Huang E, Abdallah H, Tolomeo P, Lautenbach E, Glaser L, Kelly BJ. Quantifying the Impact of Nasopharyngeal Specimen Quality on Severe Acute Respiratory Syndrome Coronavirus 2 Test Performance. Open Forum Infect Dis. Oxford University Press; 2021 Jun;8(6):ofab235. Available from: http://dx.doi.org/10.1093/ofid/ofab235 PMCID: PMC8136075
-
-Rhee RL, Lu J, Bittinger K, Lee J-J, Mattei LM, Sreih AG, Chou S, Miner JJ, Cohen NA, Kelly BJ, Lee H, Grayson PC, Collman RG, Merkel PA. Dynamic Changes in the Nasal Microbiome Associated with Disease Activity in Patients with Granulomatosis with Polyangiitis. Arthritis Rheumatol. 2021 Mar 7. Available from: http://dx.doi.org/10.1002/art.41723 PMID: 33682371
-
-Abdallah HO, Weingart MF, Fuller R, Pegues D, Fitzpatrick R, Kelly BJ. Subglottic suction frequency and adverse ventilator-associated events during critical illness. Infect Control Hosp Epidemiol. 2021 Jan 11;1–7. Available from: http://dx.doi.org/10.1017/ice.2020.1298 PMID: 33423714
-
-Richard-Greenblatt M, Ziegler MJ, Bromberg V, Huang E, Abdallah H, Tolomeo P, Lautenbach E, Glaser L, Kelly BJ. Impact of Nasopharyngeal Specimen Quality on SARS-CoV-2 Test Sensitivity. medRxiv. Cold Spring Harbor Laboratory Press; 2020 Dec 11;2020.12.09.20246520. Available from: http://dx.doi.org/10.1101/2020.12.09.20246520 PMCID: PMC7743104
 
 Redding LE, Kelly BJ, Stefanovski D, Lautenbach JK, Tolomeo P, Cressman L, Gruber E, Meily P, Lautenbach E. Pet Ownership Protects Against Recurrence of Clostridioides difficile Infection. Open Forum Infect Dis. 2020 Jan;7(1):ofz541. Available from: http://dx.doi.org/10.1093/ofid/ofz541 PMCID: PMC6969483
 
@@ -14,7 +16,7 @@ Ziegler M, Han JH, Landsburg D, Pegues D, Reesey E, Gilmar C, Gorman T, Bink K, 
 
 Kelly BJ, Lautenbach E, Han JH, Centers for Disease Control and Prevention Healthcare Associated Infection Prevention Epicenters Program. The authors reply. Critical care medicine. 2019. p. e275–e276. Available from: http://dx.doi.org/10.1097/CCM.0000000000003587 PMID: 30768528
 
-Knecht VR, McGinniss JE, Shankar HM, Clarke EL, Kelly BJ, Imai I, Fitzgerald AS, Bittinger K, Bushman FD, Collman RG. Molecular analysis of bacterial contamination on stethoscopes in an intensive care unit. Infect Control Hosp Epidemiol. 2018 Dec 18;1–7. Available from: http://dx.doi.org/10.1017/ice.2018.319 PMCID: PMC6581638
+Knecht VR, McGinniss JE, Shankar HM, Clarke EL, Kelly BJ, Imai I, Fitzgerald AS, Bittinger K, Bushman FD, Collman RG. Molecular analysis of bacterial contamination on stethoscopes in an intensive care unit. Infect Control Hosp Epidemiol. 2019 Feb;40(2):171–177. Available from: http://dx.doi.org/10.1017/ice.2018.319 PMCID: PMC6581638
 
 Kelly BJ, Lautenbach E, Nachamkin I, Coffin SE, Gerber JS, Fuchs BD, Garrigan C, Han X, Bilker WB, Wise J, Tolomeo P, Han JH, Centers for Disease Control and Prevention (CDC) Prevention Epicenters Program. Combined Biomarkers Predict Acute Mortality Among Critically Ill Patients With Suspected Sepsis. Crit Care Med. 2018 Jul;46(7):1106–1113. Available from: http://dx.doi.org/10.1097/CCM.0000000000003137 PMCID: PMC6010038
 

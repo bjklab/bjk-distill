@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 site: distill::distill_website
-favicon: microscope_blue.png
+favicon: microscope_inferno.png
 ---
 
 ```{r, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
@@ -9,6 +9,11 @@ favicon: microscope_blue.png
 
 
 ```
+  
+### Fecal microbiota transplantation to address colonization and environmental contamination with multidrug-resistant organisms (FACE-MDRO) (CDC U54-CK000610)    
+  
+We will perform fecal microbiota transplantation (FMT) at the conclusion of antibiotic therapy for MDRO infections to define the impact of FMT on eradicating MDRO colonization from the gastrointestinal tract. We will also determine how FMT administration impacts MDRO colonization in the healthcare environment.   
+  
   
 ### Whole-genome sequencing to define SARS-CoV-2 variant populations during vaccine rollout in the Philadelphia metropolitan region (CDC BAA 200-2021-10986)  
   

@@ -10,13 +10,13 @@ links:
     url: "bjk_cv.pdf"
   - label: Twitter
     url: "https://twitter.com/bjk_lab"
-favicon: microscope_blue.png
+favicon: microscope_inferno.png
 site: distill::distill_website
 output:
   postcards::trestles
 ---
   
-Brendan J. Kelly, M.D., M.S., is an infectious diseases physician and molecular epidemiologist at the University of Pennsylvania. He studies how microbes interact in the human respiratory and gastrointestinal tracts, and how microbial interactions can be engineered to prevent and treat antibiotic-resistant infections. Specifically, Dr. Kelly seeks to understand properties of microbial ecosystems that protect against bacterial pathogen colonization and infection, how microbial ecosystems are altered by antibiotics, and how they recover from infection and antibiotic treatment. He has performed large, clinical-translational studies to better understand two infections that occur commonly during critical illness: bacterial pneumonia and _C. difficile_ colitis. He has also investigated the use of fecal microbiota transplant (FMT) to aid recovery of the intestinal microbiota after _C. difficile_ treatment. His work has been supported by the National Institute of Allergy and Infectious Diseases (NIAID) and the Centers for Disease Control and Prevention (CDC).  
+Brendan J. Kelly, M.D., M.S., is an infectious diseases physician and molecular epidemiologist at the University of Pennsylvania. He studies how microbes interact in the human respiratory and gastrointestinal tracts, and how microbial interactions can be engineered to prevent and treat antibiotic-resistant infections. Specifically, Dr. Kelly seeks to understand properties of microbial ecosystems that protect against bacterial pathogen colonization and infection, how microbial ecosystems are altered by antibiotics, and how they recover from infection and antibiotic treatment. He has performed large, clinical-translational studies to better understand two infections that occur commonly during critical illness: bacterial pneumonia and _C. difficile_ colitis. He has also investigated the use of fecal microbiota transplant (FMT) to aid recovery of the intestinal microbiota after _C. difficile_ treatment. During the COVID-19 pandemic, he is leading a study of SARS-CoV-2 variant succession across the Philadelphia metropolitan region. His work has been supported by the National Institute of Allergy and Infectious Diseases (NIAID) and the Centers for Disease Control and Prevention (CDC).  
   
   
 #### Education  
