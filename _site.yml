@@ -5,7 +5,7 @@ description: |
 #output_dir: "_site"
 output_dir: "docs"
 base_url: https://bjklab.github.io/bjk-distill/index.html
-favicon: microscope_blue.png
+favicon: microscope_white.png
 google_analytics: "G-8RX21HL654"
 navbar:
 #  logo:
