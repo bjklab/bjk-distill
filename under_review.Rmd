@@ -1,7 +1,7 @@
 ---
 title: "Under Review"
 site: distill::distill_website
-favicon: microscope_white.png
+favicon: microscope_inferno.png
 ---
 
 ```{r, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE, layout="l-body-outset", fig.width=6}

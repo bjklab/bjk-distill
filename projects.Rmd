@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 site: distill::distill_website
-favicon: microscope_white.png
+favicon: microscope_inferno.png
 ---
 
 ```{r, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
