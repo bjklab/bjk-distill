@@ -36,7 +36,7 @@ We are performing a cross-sectional study to determine the bacterial microbiome 
 We developed a cohort of long-term acute care (LTACH) patients dependent on mechanical ventilation and at high risk for lower respiratory tract infection and performed dense, longitudinal sampling of the upper and lower respiratory tract, as well as the gastrointestinal tract, in order to understand the evolution of the bacterial microbiome during critical illness and the microbiome features that portend risk for LRTI, thus improving the ability to target diagnostic and infection prevention interventions.  
   
   
-### Randomized clinical trial of fecal microbiota transplantation for severe and severe-complicated _C.difficile_ infection (CDC Southestern Pennsylvania Adult and Pediatric Prevention Epicenter Network)  
+### Randomized clinical trial of fecal microbiota transplantation for severe and severe-complicated _C.difficile_ infection (CDC Southeastern Pennsylvania Adult and Pediatric Prevention Epicenter Network)  
   
 A phase II, randomized trial to evaluate the safety and efficacy of fecal microbiota transplantation using the Penn Microbiome Therapy products for severe or severe-complicated/fulminate _C.difficile_ infection ([NCT03970200](https://clinicaltrials.gov/ct2/show/NCT03970200)).  
   
