@@ -1,0 +1,51 @@
+---
+title: "Deep Sequencing for Respiratory Pathogen Detection and Infection Diagnosis"
+description: |
+  A presentation given at the American Society of Microbiology EPA 50th Annual Symposium.
+author:
+  - name: Brendan J. Kelly 
+    url: https://github.com/bjklab
+    affiliation: University of Pennsylvania
+    affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+date: 2021-11-05
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "Deep Sequencing for Respiratory Pathogen Detection and Infection Diagnosis"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "Deep Sequencing for Respiratory Pathogen Detection and Infection Diagnosis",
+    url = "bjklab.org/posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis",
+    image = "bjklab.org/posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis/cover_slide.png",
+    image_alt = "The title slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
+```
+
+I was honored to present at the Eastern Pennsylvania American Society of Microbiology (ASM) 50th Annual Symposium. Here are the slides from my presentation:    
+  
+  
+```{r xaringan_epa_asm, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Deep-Sequencing-for-Respiratory-Pathogen-Detection-and-Infection-Diagnosis_EPA-ASM-2021/deep_seq_resp_path_infection_dx.html",
+                              ratio = "16:9")
+
+
+
+```
+
+
+

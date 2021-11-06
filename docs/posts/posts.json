@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis/",
+    "title": "Deep Sequencing for Respiratory Pathogen Detection and Infection Diagnosis",
+    "description": "A presentation given at the American Society of Microbiology EPA 50th Annual Symposium.",
+    "author": [
+      {
+        "name": "Brendan J. Kelly",
+        "url": "https://github.com/bjklab"
+      }
+    ],
+    "date": "2021-11-05",
+    "categories": [],
+    "contents": "\nI was honored to present at the Eastern Pennsylvania American Society of Microbiology (ASM) 50th Annual Symposium. Here are the slides from my presentation:\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-11-05T20:04:40-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-04-01-a-brief-overview-of-my-research/",
     "title": "A brief overview of my research",
     "description": "Introducing my research program and priorities.",
