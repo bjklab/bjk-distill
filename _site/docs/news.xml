@@ -17,16 +17,7 @@
       <title>Deep Sequencing for Respiratory Pathogen Detection and Infection Diagnosis</title>
       <dc:creator>Brendan J. Kelly</dc:creator>
       <link>https://bjklab.github.io/bjk-distill/index.html/posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis</link>
-      <description>
-
-
-&lt;p&gt;I was honored to present at the Eastern Pennsylvania American Society of Microbiology (ASM) 50th Annual Symposium. Here are the slides from my presentation:&lt;/p&gt;
-&lt;div class="shareagain" style="min-width:300px;margin:1em auto;"&gt;
-&lt;iframe src="https://bjklab.github.io/Deep-Sequencing-for-Respiratory-Pathogen-Detection-and-Infection-Diagnosis_EPA-ASM-2021/deep_seq_resp_path_infection_dx.html" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;script&gt;fitvids('.shareagain', {players: 'iframe'});&lt;/script&gt;
-&lt;/div&gt;
-&lt;pre class="r distill-force-highlighting-css"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;</description>
-      <distill:md5>3664d30cc14202647188553b631e2c30</distill:md5>
+      <description>A presentation given at the American Society of Microbiology EPA 50th Annual Symposium.</description>
       <guid>https://bjklab.github.io/bjk-distill/index.html/posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis</guid>
       <pubDate>Fri, 05 Nov 2021 00:00:00 +0000</pubDate>
     </item>
