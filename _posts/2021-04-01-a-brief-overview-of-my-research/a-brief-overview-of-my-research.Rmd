@@ -8,6 +8,7 @@ author:
     affiliation: University of Pennsylvania
     affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
 date: 2021-04-01
+preview: cover_slide.png
 output:
   distill::distill_article:
     self_contained: false
@@ -15,7 +16,25 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "A brief overview of my research"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "A brief overview of my research",
+    url = "bjklab.org/posts/2021-04-01-a-brief-overview-of-my-research",
+    image = "cover_slide.png",
+    image_alt = "The title slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
+
 ```
 
 I was asked to give a brief summary of my research program to the Department of Biostatistics, Epidemiology, and Informatics at Penn:   

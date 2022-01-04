@@ -8,6 +8,7 @@ author:
     affiliation: University of Pennsylvania
     affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
 date: 2021-11-05
+preview: cover_slide.png
 output:
   distill::distill_article:
     self_contained: false
@@ -15,7 +16,7 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
 library(metathis)
 meta() %>%
   meta_description(
@@ -26,7 +27,7 @@ meta() %>%
   meta_social(
     title = "Deep Sequencing for Respiratory Pathogen Detection and Infection Diagnosis",
     url = "bjklab.org/posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis",
-    image = "bjklab.org/posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis/cover_slide.png",
+    image = "cover_slide.png",
     image_alt = "The title slide",
     og_type = "blog",
     og_author = "Brendan J. Kelly",

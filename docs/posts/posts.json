@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\nThis week, COVID-19 cases have continued to rise in Philadelphia, Pennsylvania (4119 observed cases on December 28, 2021), despite incidence modelling that predicted a peak closer to 680 cases/day. I wanted to understand how case backfill, the process of updating COVID-19 daily case counts for up to a week after the initial daily case counts are recorded, might impact estimates of the COVID-19 reproductive number (Rt) and predictions of future COVID-19 incidence based on Rt. During the winter holiday season, short staffing may result in data entry and transfer delays that increase the impact of case backfill. To understand the holiday backfill effect, I compared the COVID-19 case data available for Philadelphia, Pennsylvania on 22 December 2021 to the case data available today, 3 January 2022:\n\n\n\nIn the top panel, the comparison of incidence data demonstrates that case backfill significantly increased cases in the week prior to December 22, 2021. In the bottom panel, the effect of this missing data to skew Rt below 1 can be seen. Rt was estimated using a mean serial interval of 2.2 days (SD 0.8 days), based on the best available data on the Omicron variant, via the EpiEstim R package. The median (line) and 95% confidence interval (shading) for the estimated Rt are shown.\nThe same model for Rt based on the most recent available data again suggests that Rt is trending down… but this should not be cause for excess optimism in light of the holiday backfill effect seen last week.\n\n\n\n",
     "preview": "posts/2022-01-03-watch-out-for-the-case-backfill/p_covid_backfill_combined_tp.png",
-    "last_modified": "2022-01-03T23:21:11-05:00",
+    "last_modified": "2022-01-04T11:08:07-05:00",
     "input_file": {},
     "preview_width": 2400,
     "preview_height": 1800
@@ -31,9 +31,11 @@
     "date": "2021-11-05",
     "categories": [],
     "contents": "\nI was honored to present at the Eastern Pennsylvania American Society of Microbiology (ASM) 50th Annual Symposium. Here are the slides from my presentation:\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-11-05T20:04:40-04:00",
-    "input_file": {}
+    "preview": "posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis/cover_slide.png",
+    "last_modified": "2022-01-04T10:39:32-05:00",
+    "input_file": {},
+    "preview_width": 2522,
+    "preview_height": 1419
   },
   {
     "path": "posts/2021-04-01-a-brief-overview-of-my-research/",
@@ -48,9 +50,11 @@
     "date": "2021-04-01",
     "categories": [],
     "contents": "\nI was asked to give a brief summary of my research program to the Department of Biostatistics, Epidemiology, and Informatics at Penn:\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-04-01T09:46:38-04:00",
-    "input_file": {}
+    "preview": "posts/2021-04-01-a-brief-overview-of-my-research/cover_slide.png",
+    "last_modified": "2022-01-04T10:43:06-05:00",
+    "input_file": {},
+    "preview_width": 2246,
+    "preview_height": 1262
   },
   {
     "path": "posts/2021-03-31-covid-19-in-kids-and-adults/",
@@ -65,9 +69,11 @@
     "date": "2021-03-31",
     "categories": [],
     "contents": "\nToday I had the opportunity to discuss SARS-CoV-2 transmission among kids and adults, drawing on a recent seroprevalence study. It was a pleasure to join the Penn DBEI’s Population Science journal club. My slides are attached here.\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-03-31T23:30:27-04:00",
-    "input_file": {}
+    "preview": "posts/2021-03-31-covid-19-in-kids-and-adults/cover_slide.png",
+    "last_modified": "2022-01-04T10:47:48-05:00",
+    "input_file": {},
+    "preview_width": 2246,
+    "preview_height": 1262
   },
   {
     "path": "posts/2021-03-25-fmt-update-for-transplant-oncology/",
@@ -82,9 +88,11 @@
     "date": "2021-03-25",
     "categories": [],
     "contents": "\nToday I gave a short talk on the development of fecal microbiota transplantation (FMT) methods and how FMT can be applied to oncology patients at risk for chemotherapy/antibiotic-related intestinal microbiota disruption and graft-versus-host-disease (GVHD).\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-03-25T14:20:22-04:00",
-    "input_file": {}
+    "preview": "posts/2021-03-25-fmt-update-for-transplant-oncology/cover_slide.png",
+    "last_modified": "2022-01-04T10:50:43-05:00",
+    "input_file": {},
+    "preview_width": 2248,
+    "preview_height": 1262
   },
   {
     "path": "posts/2021-03-03-update-on-fecal-microbiota-transplantation/",
@@ -99,9 +107,11 @@
     "date": "2021-03-03",
     "categories": [],
     "contents": "\nI had reason to go back to an update on fecal microbiota transplantation (FMT) that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-03-03T13:54:10-05:00",
-    "input_file": {}
+    "preview": "posts/2021-03-03-update-on-fecal-microbiota-transplantation/cover_slide.png",
+    "last_modified": "2022-01-04T10:53:42-05:00",
+    "input_file": {},
+    "preview_width": 2250,
+    "preview_height": 1262
   },
   {
     "path": "posts/2021-02-18-c-difficile-clinical-update/",
@@ -116,9 +126,11 @@
     "date": "2021-02-18",
     "categories": [],
     "contents": "\nI had reason to go back to a C. difficile clinical update that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-03-03T13:52:53-05:00",
-    "input_file": {}
+    "preview": "posts/2021-02-18-c-difficile-clinical-update/objectives_slide.png",
+    "last_modified": "2022-01-04T10:59:45-05:00",
+    "input_file": {},
+    "preview_width": 2242,
+    "preview_height": 1258
   },
   {
     "path": "posts/2021-01-16-welcome/",
@@ -133,8 +145,10 @@
     "date": "2021-01-16",
     "categories": [],
     "contents": "\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-01-31T20:14:49-05:00",
-    "input_file": {}
+    "preview": "posts/2021-01-16-welcome/lower_respiratory.png",
+    "last_modified": "2022-01-04T11:06:38-05:00",
+    "input_file": {},
+    "preview_width": 1750,
+    "preview_height": 1270
   }
 ]

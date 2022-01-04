@@ -8,6 +8,7 @@ author:
     url: https://github.com/bjklab
     affiliation: University of Pennsylvania
     affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+preview: lower_respiratory.png
 output:
   distill::distill_article:
     self_contained: false

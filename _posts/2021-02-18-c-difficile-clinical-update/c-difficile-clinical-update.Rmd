@@ -8,6 +8,7 @@ author:
     affiliation: University of Pennsylvania
     affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
 date: 2021/02/18
+preview: objectives_slide.png
 output:
   distill::distill_article:
     self_contained: false
@@ -15,7 +16,25 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "C. difficile Clinical Update"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "C. difficile Clinical Update",
+    url = "bjklab.org/posts/2021-02-18-c-difficile-clinical-update",
+    image = "objectives_slide.png",
+    image_alt = "The objectives slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
+
 ```
 
 I had reason to go back to a _C. difficile_ clinical update that I gave recently. Now slightly out-of-date, but perhaps still useful:   

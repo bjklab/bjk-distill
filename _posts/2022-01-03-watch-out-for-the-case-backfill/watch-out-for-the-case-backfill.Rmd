@@ -6,6 +6,7 @@ author:
   - name: Brendan J. Kelly
     url: https://github.com/bjklab
 date: 2022-01-03
+preview: p_covid_backfill_combined_tp.png
 output:
   distill::distill_article:
     self_contained: false
@@ -15,8 +16,26 @@ output:
 ```{r setup, include=FALSE}
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, error = FALSE, message = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "Watch Out for the Case Backfill!"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "Watch Out for the Case Backfill!",
+    url = "bjklab.org/posts/2022-01-03-watch-out-for-the-case-backfill",
+    image = "p_covid_backfill_combined_tp.png",
+    image_alt = "Effect of case backfill on COVID-19 cases in Philadelphia, Pennsylvania.",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
 
 ```
+
   
 This week, COVID-19 cases have continued to rise in Philadelphia, Pennsylvania (4119 observed cases on December 28, 2021), despite <a href="https://policylab.chop.edu/covid-lab-mapping-covid-19-your-community">incidence modelling</a> that predicted a peak closer to 680 cases/day. I wanted to understand how <b>case backfill</b>, the process of updating COVID-19 daily case counts for up to a week after the initial daily case counts are recorded, might impact estimates of the COVID-19 reproductive number (R<sub>t</sub>) and predictions of future COVID-19 incidence based on R<sub>t</sub>. During the winter holiday season, short staffing may result in data entry and transfer delays that <a href="https://www.nytimes.com/interactive/2021/11/22/us/covid-data-holiday-averages.html">increase the impact of case backfill</a>. To understand the <b>holiday backfill effect</b>, I compared the COVID-19 case data available for Philadelphia, Pennsylvania on 22 December 2021 to the case data available today, 3 January 2022:  
   

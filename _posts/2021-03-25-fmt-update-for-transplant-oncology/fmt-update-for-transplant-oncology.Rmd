@@ -8,6 +8,7 @@ author:
     affiliation: University of Pennsylvania
     affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
 date: 2021-03-25
+preview: cover_slide.png
 output:
   distill::distill_article:
     self_contained: false
@@ -16,7 +17,24 @@ output:
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "FMT Update for Transplant Oncology"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "FMT Update for Transplant Oncology",
+    url = "bjklab.org/posts/2021-03-25-fmt-update-for-transplant-oncology",
+    image = "cover_slide.png",
+    image_alt = "The title slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
 ```
 
 Today I gave a short talk on the development of fecal microbiota transplantation (FMT) methods and how FMT can be applied to oncology patients at risk for chemotherapy/antibiotic-related intestinal microbiota disruption and graft-versus-host-disease (GVHD).   
