@@ -1,0 +1,53 @@
+---
+title: "Antibiotics & Empty Islands"
+description: |
+  Microbial repopulation is essential to recovery from infection.
+author:
+  - name: Brendan J. Kelly 
+    url: https://github.com/bjklab
+    affiliation: University of Pennsylvania
+    affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+date: 2022-02-14
+preview: cover_slide.png
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "A brief overview of my research"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "A brief overview of my research",
+    url = "bjklab.org/posts/2021-04-01-a-brief-overview-of-my-research",
+    image = "cover_slide.png",
+    image_alt = "The title slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
+
+```
+
+I had a great time visiting the Department of Medicine and Division of Infectious Diseases at Robert Wood Johnson Medical School, Rutgers University. I gave an update on my research, emphasizing work to understand and engineer post-antibiotic repopulation of gut and respiratory microbiota:       
+  
+  
+```{r xaringan_empty_islands, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Empty-Islands/empty_islands.html",
+                              ratio = "16:9")
+
+
+
+```
+
+
+
