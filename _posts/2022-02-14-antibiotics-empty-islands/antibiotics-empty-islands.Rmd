@@ -42,7 +42,7 @@ I had a great time visiting the Department of Medicine and Division of Infectiou
   
 ```{r xaringan_empty_islands, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Empty-Islands/empty_islands.html",
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Empty-Islands/empty_islands_2022-02-14.html",
                               ratio = "16:9")
 
 
