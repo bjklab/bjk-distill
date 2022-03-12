@@ -1,0 +1,54 @@
+---
+title: "Designing Microbiome Trials"
+description: |
+  A presentation to the Gut Microbiota for Health World Forum 2022.
+author:
+  - name: Brendan J. Kelly 
+    url: https://github.com/bjklab
+    affiliation: University of Pennsylvania
+    affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+date: 2022-03-12
+preview: cover_slide.png
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "Designing Microbiome Trials"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "Designing Microbiome Trials",
+    url = "bjklab.org/posts/2022-03-12-designing-microbiome-trials.html",
+    image = "cover_slide.png",
+    image_alt = "The title slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
+
+```
+
+I was delighted to be invited to talk about unique considerations in designing microbiome trials at the Gut Microbiota for Health World Forum 2022, in Washington, DC. My presentation is linked below:       
+  
+  
+```{r xaringan_empty_islands, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Designing-microbiome-trials-GMFH-2022/designing_microbiome_trials_GMFH.html",
+                              ratio = "16:9")
+
+
+
+```
+
+
+
