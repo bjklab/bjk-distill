@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,9 +74,9 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
 code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
@@ -526,6 +527,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
+    font-size: 100%;
   }
 
   .html-widget {
@@ -767,10 +769,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1602,9 +1600,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
         var refs = $(this).attr('data-cites').split(" ");
         var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
         }).join("\n");
         window.tippy(this, {
           allowHTML: true,
@@ -1616,6 +1626,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1715,6 +1750,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1737,7 +1774,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -2108,7 +2145,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.18/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2146,7 +2183,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <a href="index.html" class="title">Brendan J. Kelly</a>
 </div>
 <div class="nav-right">
-<a href="index.html">About</a>
 <a href="projects.html">Projects</a>
 <div class="nav-dropdown">
 <button class="nav-dropbtn">
@@ -2249,6 +2285,8 @@ Teaching
   font-weight: initial;
   padding-top: 4px;
   padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-bottom-color: #FFFFFF;
   border-bottom-width: 0;
 }
@@ -2259,6 +2297,8 @@ Teaching
   font-weight: initial;
   padding-top: 0;
   padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-top-color: #FFFFFF;
   border-top-width: 0;
 }
@@ -2337,7 +2377,10 @@ Teaching
 }
 
 #gvauvhfbjv .gt_group_heading {
-  padding: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   color: #333333;
   background-color: #D3D3D3;
   font-size: 100%;
@@ -2409,7 +2452,26 @@ Teaching
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #000000;
-  padding-left: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#gvauvhfbjv .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#gvauvhfbjv .gt_row_group_first td {
+  border-top-width: 2px;
 }
 
 #gvauvhfbjv .gt_summary_row {
@@ -2423,13 +2485,22 @@ Teaching
 }
 
 #gvauvhfbjv .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #000000;
+}
+
+#gvauvhfbjv .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#gvauvhfbjv .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
   padding-right: 5px;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #000000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #000000;
 }
 
 #gvauvhfbjv .gt_grand_summary_row {
@@ -2482,7 +2553,10 @@ Teaching
 #gvauvhfbjv .gt_footnote {
   margin: 0px;
   font-size: 90%;
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #gvauvhfbjv .gt_sourcenotes {
@@ -2501,7 +2575,10 @@ Teaching
 
 #gvauvhfbjv .gt_sourcenote {
   font-size: 11px;
-  padding: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #gvauvhfbjv .gt_left {
@@ -2536,18 +2613,44 @@ Teaching
 #gvauvhfbjv .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
-  font-size: 65%;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#gvauvhfbjv .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#gvauvhfbjv .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#gvauvhfbjv .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#gvauvhfbjv .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#gvauvhfbjv .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#gvauvhfbjv .gt_indent_5 {
+  text-indent: 25px;
 }
 </style>
 <table class="gt_table">
   
   <thead class="gt_col_headings">
     <tr>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Authors</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Title</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Journal</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">Link</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">Year</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Authors</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Title</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col">Journal</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col">Link</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col">Year</th>
     </tr>
   </thead>
   <tbody class="gt_table_body">
@@ -2555,132 +2658,132 @@ Teaching
 <td class="gt_row gt_left">Stopping Hospital Infections with Environmental Services (SHINE): A Cluster-Randomized Trial of Intensive Monitoring Methods for Terminal Room Cleaning on Rates of Multidrug-Resistant Organisms in the Intensive Care Unit</td>
 <td class="gt_row gt_left">Clin Infect Dis</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1093/cid/ciac070'>http://dx.doi.org/10.1093/cid/ciac070</a></td>
-<td class="gt_row gt_left">2022</td></tr>
+<td class="gt_row gt_right">2022</td></tr>
     <tr><td class="gt_row gt_left">Zhang HL, Kelly BJ, David MZ, Lautenbach E, Huang E, Bekele S, Tolomeo P, Reesey E, Loughrey S, Pegues D, Ziegler MJ, CDC Prevention Epicenters Program</td>
 <td class="gt_row gt_left">SARS-CoV-2 RNA persists on surfaces following terminal disinfection of COVID-19 hospital isolation rooms</td>
 <td class="gt_row gt_left">Am J Infect Control</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1016/j.ajic.2022.01.014'>http://dx.doi.org/10.1016/j.ajic.2022.01.014</a></td>
-<td class="gt_row gt_left">2022</td></tr>
+<td class="gt_row gt_right">2022</td></tr>
     <tr><td class="gt_row gt_left">Marques Andrew D., Sherrill-Mix Scott, Everett John K., Reddy Shantan, Hokama Pascha, Roche Aoife M., Hwang Young, Glascock Abigail, Whiteside Samantha A., Graham-Wooten Jevon, Khatib Layla A., Fitzgerald Ayannah S., Moustafa Ahmed M., Bianco Colleen, Rajagopal Swetha, Helton Jenna, Deming Regan, Denu Lidiya, Ahmed Azad, Kitt Eimear, Coffin Susan E., Newbern Claire, Mell Josh Chang, Planet Paul J., Badjatia Nitika, Richards Bonnie, Wang Zi-Xuan, Cannuscio Carolyn C., Strelau Katherine M., Jaskowiak-Barr Anne, Cressman Leigh, Loughrey Sean, Ganguly Arupa, Feldman Michael D., Collman Ronald G., Rodino Kyle G., Kelly Brendan J., Bushman Frederic D., Goff Stephen P</td>
 <td class="gt_row gt_left">SARS-CoV-2 Variants Associated with Vaccine Breakthrough in the Delaware Valley through Summer 2021</td>
 <td class="gt_row gt_left">MBio</td>
 <td class="gt_row gt_center"><a href='https://doi.org/10.1128/mbio.03788-21'>https://doi.org/10.1128/mbio.03788-21</a></td>
-<td class="gt_row gt_left">2022</td></tr>
+<td class="gt_row gt_right">2022</td></tr>
     <tr><td class="gt_row gt_left">Ziegler MJ, Huang E, Bekele S, Reesey E, Tolomeo P, Loughrey S, David MZ, Lautenbach E, Kelly BJ, CDC Prevention Epicenters Program</td>
 <td class="gt_row gt_left">Spatial and temporal effects on SARS-CoV-2 contamination of the healthcare environment</td>
 <td class="gt_row gt_left">Infect Control Hosp Epidemiol</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1017/ice.2021.530'>http://dx.doi.org/10.1017/ice.2021.530</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Ziegler MJ, Huang E, Bekele S, Reesey E, Tolomeo P, Loughrey S, David MZ, Lautenbach E, Kelly BJ, CDC Prevention Epicenters Program</td>
 <td class="gt_row gt_left">Spatial and temporal effects on severe acute respiratory coronavirus virus 2 (SARS-CoV-2) contamination of the healthcare environment</td>
 <td class="gt_row gt_left">Infect Control Hosp Epidemiol</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1017/ice.2021.530'>http://dx.doi.org/10.1017/ice.2021.530</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Marques AD, Sherrill-Mix S, Everett J, Reddy S, Hokama P, Roche AM, Hwang Y, Glascock A, Whiteside SA, Graham-Wooten J, Khatib LA, Fitzgerald AS, Moustafa AM, Bianco C, Rajagopal S, Helton J, Deming R, Denu L, Ahmed A, Kitt E, Coffin SE, Newbern C, Mell JC, Planet PJ, Badjatia N, Richards B, Wang Z-X, Cannuscio CC, Strelau KM, Jaskowiak-Barr A, Cressman L, Loughrey S, Ganguly A, Feldman MD, Collman RG, Rodino KG, Kelly BJ, Bushman FD</td>
 <td class="gt_row gt_left">SARS-CoV-2 variants associated with vaccine breakthrough in the Delaware Valley through summer 2021</td>
 <td class="gt_row gt_left">medRxiv</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1101/2021.10.18.21264623'>http://dx.doi.org/10.1101/2021.10.18.21264623</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Zhang HL, Kelly BJ, David MZ, Lautenbach E, Huang E, Bekele S, Tolomeo P, Reesey E, Loughrey S, Pegues D, Ziegler MJ, CDC Prevention Epicenters Program</td>
 <td class="gt_row gt_left">Severe acute respiratory coronavirus virus 2 (SARS-CoV-2) surface contamination in staff common areas and impact on healthcare worker infection: Prospective surveillance during the coronavirus disease 2019 (COVID-19) pandemic</td>
 <td class="gt_row gt_left">Infect Control Hosp Epidemiol</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1017/ice.2021.468'>http://dx.doi.org/10.1017/ice.2021.468</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Rhee RL, Lu J, Bittinger K, Lee J-J, Mattei LM, Sreih AG, Chou S, Miner JJ, Cohen NA, Kelly BJ, Lee H, Grayson PC, Collman RG, Merkel PA</td>
 <td class="gt_row gt_left">Dynamic Changes in the Nasal Microbiome Associated With Disease Activity in Patients With Granulomatosis With Polyangiitis</td>
 <td class="gt_row gt_left">Arthritis Rheumatol</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1002/art.41723'>http://dx.doi.org/10.1002/art.41723</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Kelly BJ, Bekele S, Loughrey S, Huang E, Tolomeo P, David MZ, Lautenbach E, Han JH, Ziegler MJ, CDC Prevention Epicenters Program</td>
 <td class="gt_row gt_left">Healthcare microenvironments define multidrug-resistant organism persistence</td>
 <td class="gt_row gt_left">Infect Control Hosp Epidemiol</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1017/ice.2021.323'>http://dx.doi.org/10.1017/ice.2021.323</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Harrigan JJ, Abdallah H, Clarke EL, Oganisian A, Roy JA, Lautenbach E, Reesey E, Wernovsky M, Tolomeo P, Morawski Z, Jacob J, Grippi MA, Kelly BJ</td>
 <td class="gt_row gt_left">Respiratory microbiome disruption and risk for ventilator-associated lower respiratory tract infection</td>
 <td class="gt_row gt_left">Clin Infect Dis</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1093/cid/ciab678'>http://dx.doi.org/10.1093/cid/ciab678</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Abdallah HO, Weingart MF, Fuller R, Pegues D, Fitzpatrick R, Kelly BJ</td>
 <td class="gt_row gt_left">Subglottic suction frequency and adverse ventilator-associated events during critical illness</td>
 <td class="gt_row gt_left">Infect Control Hosp Epidemiol</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1017/ice.2020.1298'>http://dx.doi.org/10.1017/ice.2020.1298</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Richard-Greenblatt M, Ziegler MJ, Bromberg V, Huang E, Abdallah H, Tolomeo P, Lautenbach E, Glaser L, Kelly BJ</td>
 <td class="gt_row gt_left">Quantifying the Impact of Nasopharyngeal Specimen Quality on Severe Acute Respiratory Syndrome Coronavirus 2 Test Performance</td>
 <td class="gt_row gt_left">Open Forum Infect Dis</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1093/ofid/ofab235'>http://dx.doi.org/10.1093/ofid/ofab235</a></td>
-<td class="gt_row gt_left">2021</td></tr>
+<td class="gt_row gt_right">2021</td></tr>
     <tr><td class="gt_row gt_left">Richard-Greenblatt M, Ziegler MJ, Bromberg V, Huang E, Abdallah H, Tolomeo P, Lautenbach E, Glaser L, Kelly BJ</td>
 <td class="gt_row gt_left">Impact of Nasopharyngeal Specimen Quality on SARS-CoV-2 Test Sensitivity</td>
 <td class="gt_row gt_left">medRxiv</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1101/2020.12.09.20246520'>http://dx.doi.org/10.1101/2020.12.09.20246520</a></td>
-<td class="gt_row gt_left">2020</td></tr>
+<td class="gt_row gt_right">2020</td></tr>
     <tr><td class="gt_row gt_left">Redding LE, Kelly BJ, Stefanovski D, Lautenbach JK, Tolomeo P, Cressman L, Gruber E, Meily P, Lautenbach E</td>
 <td class="gt_row gt_left">Pet Ownership Protects Against Recurrence of Clostridioides difficile Infection</td>
 <td class="gt_row gt_left">Open Forum Infect Dis</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1093/ofid/ofz541'>http://dx.doi.org/10.1093/ofid/ofz541</a></td>
-<td class="gt_row gt_left">2020</td></tr>
+<td class="gt_row gt_right">2020</td></tr>
     <tr><td class="gt_row gt_left">Berry ASF, Kelly BJ, Barnhart D, Kelly DJ, Beiting DP, Baldassano RN, Redding LE</td>
 <td class="gt_row gt_left">Gut microbiota features associated with Clostridioides difficile colonization in puppies</td>
 <td class="gt_row gt_left">PLoS One</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1371/journal.pone.0215497'>http://dx.doi.org/10.1371/journal.pone.0215497</a></td>
-<td class="gt_row gt_left">2019</td></tr>
+<td class="gt_row gt_right">2019</td></tr>
     <tr><td class="gt_row gt_left">Ziegler M, Han JH, Landsburg D, Pegues D, Reesey E, Gilmar C, Gorman T, Bink K, Moore A, Kelly BJ, CDC Prevention Epicenters Program</td>
 <td class="gt_row gt_left">Impact of Levofloxacin for the Prophylaxis of Bloodstream Infection on the Gut Microbiome in Patients With Hematologic Malignancy</td>
 <td class="gt_row gt_left">Open Forum Infect Dis</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1093/ofid/ofz252'>http://dx.doi.org/10.1093/ofid/ofz252</a></td>
-<td class="gt_row gt_left">2019</td></tr>
+<td class="gt_row gt_right">2019</td></tr>
     <tr><td class="gt_row gt_left">Knecht VR, McGinniss JE, Shankar HM, Clarke EL, Kelly BJ, Imai I, Fitzgerald AS, Bittinger K, Bushman FD, Collman RG</td>
 <td class="gt_row gt_left">Molecular analysis of bacterial contamination on stethoscopes in an intensive care unit</td>
 <td class="gt_row gt_left">Infect Control Hosp Epidemiol</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1017/ice.2018.319'>http://dx.doi.org/10.1017/ice.2018.319</a></td>
-<td class="gt_row gt_left">2019</td></tr>
+<td class="gt_row gt_right">2019</td></tr>
     <tr><td class="gt_row gt_left">Kelly BJ, Lautenbach E, Nachamkin I, Coffin SE, Gerber JS, Fuchs BD, Garrigan C, Han X, Bilker WB, Wise J, Tolomeo P, Han JH, Centers for Disease Control and Prevention (CDC) Prevention Epicenters Program</td>
 <td class="gt_row gt_left">Combined Biomarkers Predict Acute Mortality Among Critically Ill Patients With Suspected Sepsis</td>
 <td class="gt_row gt_left">Crit Care Med</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1097/CCM.0000000000003137'>http://dx.doi.org/10.1097/CCM.0000000000003137</a></td>
-<td class="gt_row gt_left">2018</td></tr>
+<td class="gt_row gt_right">2018</td></tr>
     <tr><td class="gt_row gt_left">Agarwal R, Bartsch SM, Kelly BJ, Prewitt M, Liu Y, Chen Y, Umscheid CA</td>
 <td class="gt_row gt_left">Newer glycopeptide antibiotics for treatment of complicated skin and soft tissue infections: systematic review, network meta-analysis and cost analysis</td>
 <td class="gt_row gt_left">Clin Microbiol Infect</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1016/j.cmi.2017.08.028'>http://dx.doi.org/10.1016/j.cmi.2017.08.028</a></td>
-<td class="gt_row gt_left">2018</td></tr>
+<td class="gt_row gt_right">2018</td></tr>
     <tr><td class="gt_row gt_left">Kelly BJ, Tebas P</td>
 <td class="gt_row gt_left">Clinical Practice and Infrastructure Review of Fecal Microbiota Transplantation for Clostridium difficile Infection</td>
 <td class="gt_row gt_left">Chest</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1016/j.chest.2017.09.002'>http://dx.doi.org/10.1016/j.chest.2017.09.002</a></td>
-<td class="gt_row gt_left">2018</td></tr>
+<td class="gt_row gt_right">2018</td></tr>
     <tr><td class="gt_row gt_left">Kelly BJ, Lautenbach E, Nachamkin I, Coffin SE, Gerber JS, Fuchs BD, Garrigan C, Han X, Bilker WB, Wise J, Tolomeo P, Han JH, Centers for Disease Control and Prevention (CDC) Prevention Epicenters Program</td>
 <td class="gt_row gt_left">Combined biomarkers discriminate a low likelihood of bacterial infection among surgical intensive care unit patients with suspected sepsis</td>
 <td class="gt_row gt_left">Diagn Microbiol Infect Dis</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1016/j.diagmicrobio.2016.01.003'>http://dx.doi.org/10.1016/j.diagmicrobio.2016.01.003</a></td>
-<td class="gt_row gt_left">2016</td></tr>
+<td class="gt_row gt_right">2016</td></tr>
     <tr><td class="gt_row gt_left">Kelly BJ, Imai I, Bittinger K, Laughlin A, Fuchs BD, Bushman FD, Collman RG</td>
 <td class="gt_row gt_left">Composition and dynamics of the respiratory tract microbiome in intubated patients</td>
 <td class="gt_row gt_left">Microbiome</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1186/s40168-016-0151-8'>http://dx.doi.org/10.1186/s40168-016-0151-8</a></td>
-<td class="gt_row gt_left">2016</td></tr>
+<td class="gt_row gt_right">2016</td></tr>
     <tr><td class="gt_row gt_left">Kelly BJ, Gross R, Bittinger K, Sherrill-Mix S, Lewis JD, Collman RG, Bushman FD, Li H</td>
 <td class="gt_row gt_left">Power and sample-size estimation for microbiome studies using pairwise distances and PERMANOVA</td>
 <td class="gt_row gt_left">Bioinformatics</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1093/bioinformatics/btv183'>http://dx.doi.org/10.1093/bioinformatics/btv183</a></td>
-<td class="gt_row gt_left">2015</td></tr>
+<td class="gt_row gt_right">2015</td></tr>
     <tr><td class="gt_row gt_left">Brady T, Kelly BJ, Male F, Roth S, Bailey A, Malani N, Gijsbers R, O’Doherty U, Bushman FD</td>
 <td class="gt_row gt_left">Quantitation of HIV DNA integration: effects of differential integration site distributions on Alu-PCR assays</td>
 <td class="gt_row gt_left">J Virol Methods</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1016/j.jviromet.2013.01.004'>http://dx.doi.org/10.1016/j.jviromet.2013.01.004</a></td>
-<td class="gt_row gt_left">2013</td></tr>
+<td class="gt_row gt_right">2013</td></tr>
     <tr><td class="gt_row gt_left">Khiabanian H, Holmes AB, Kelly BJ, Gururaj M, Hripcsak G, Rabadan R</td>
 <td class="gt_row gt_left">Signs of the 2009 influenza pandemic in the New York-Presbyterian Hospital electronic health records</td>
 <td class="gt_row gt_left">PLoS One</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1371/journal.pone.0012658'>http://dx.doi.org/10.1371/journal.pone.0012658</a></td>
-<td class="gt_row gt_left">2010</td></tr>
+<td class="gt_row gt_right">2010</td></tr>
     <tr><td class="gt_row gt_left">Yu M, Kumar TRS, Nkrumah LJ, Coppi A, Retzlaff S, Li CD, Kelly BJ, Moura PA, Lakshmanan V, Freundlich JS, Valderramos J-C, Vilcheze C, Siedner M, Tsai JH-C, Falkard B, Sidhu ABS, Purcell LA, Gratraud P, Kremer L, Waters AP, Schiehser G, Jacobus DP, Janse CJ, Ager A, Jacobs WR Jr, Sacchettini JC, Heussler V, Sinnis P, Fidock DA</td>
 <td class="gt_row gt_left">The fatty acid biosynthesis enzyme FabI plays a key role in the development of liver-stage malarial parasites</td>
 <td class="gt_row gt_left">Cell Host Microbe</td>
 <td class="gt_row gt_center"><a href='http://dx.doi.org/10.1016/j.chom.2008.11.001'>http://dx.doi.org/10.1016/j.chom.2008.11.001</a></td>
-<td class="gt_row gt_left">2008</td></tr>
+<td class="gt_row gt_right">2008</td></tr>
   </tbody>
   
   

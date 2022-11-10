@@ -13,8 +13,8 @@ navbar:
 #    href: https://www.ncbi.nlm.nih.gov/myncbi/12Ouj3rJSdIka/bibliography/public/
   search: false
   right:
-    - text: "About"
-      href: index.html
+    # - text: "About"
+    #   href: index.html
     - text: "Projects"
       href: projects.html
     - text: "Manuscripts"
