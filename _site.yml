@@ -17,6 +17,8 @@ navbar:
     #   href: index.html
     - text: "Projects"
       href: projects.html
+    - text: "Protocols"
+      href: protocols.html
     - text: "Manuscripts"
       menu:
         - text: "Under Review"
