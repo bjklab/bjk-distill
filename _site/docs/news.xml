@@ -12,7 +12,16 @@
       <link>https://bjklab.github.io/bjk-distill/index.html</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Sat, 12 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Genomic Epidemiology for COVID-19</title>
+      <dc:creator>Brendan J. Kelly</dc:creator>
+      <link>https://bjklab.github.io/bjk-distill/index.html/posts/2022-11-29-genomic-epidemiology-for-covid-19</link>
+      <description>A presentation to the 'Parallel Plagues' group at the University of Pennsylvania .</description>
+      <guid>https://bjklab.github.io/bjk-distill/index.html/posts/2022-11-29-genomic-epidemiology-for-covid-19</guid>
+      <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://bjklab.github.io/bjk-distill/index.html/posts/2022-11-29-genomic-epidemiology-for-covid-19/cover_slide.png" medium="image" type="image/png" width="1840" height="1036"/>
+    </item>
     <item>
       <title>Designing Microbiome Trials</title>
       <dc:creator>Brendan J. Kelly</dc:creator>

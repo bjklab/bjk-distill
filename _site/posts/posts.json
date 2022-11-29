@@ -1,5 +1,24 @@
 [
   {
+    "path": "posts/2022-11-29-genomic-epidemiology-for-covid-19/",
+    "title": "Genomic Epidemiology for COVID-19",
+    "description": "A presentation to the 'Parallel Plagues' group at the University of Pennsylvania .",
+    "author": [
+      {
+        "name": "Brendan J. Kelly",
+        "url": "https://github.com/bjklab"
+      }
+    ],
+    "date": "2022-11-29",
+    "categories": [],
+    "contents": "\nIt was a pleasure to join the University of Pennsylvania’s ‘Parallel Plagues’ course this week. My presentation is linked below:\n\n\n\n\n\n\n\n\n",
+    "preview": "posts/2022-11-29-genomic-epidemiology-for-covid-19/cover_slide.png",
+    "last_modified": "2022-11-29T08:52:26-05:00",
+    "input_file": {},
+    "preview_width": 1840,
+    "preview_height": 1036
+  },
+  {
     "path": "posts/2022-03-12-designing-microbiome-trials/",
     "title": "Designing Microbiome Trials",
     "description": "A presentation to the Gut Microbiota for Health World Forum 2022.",
