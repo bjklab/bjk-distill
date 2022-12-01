@@ -37,10 +37,10 @@ meta() %>%
 
 ```
 
-It was a pleasure to join the University of Pennsylvania's ['Parallel Plagues'](https://penntoday.upenn.edu/news/peru-and-us-considering-factors-drive-public-health) course this week. My presentation is linked below:       
+It was a pleasure to join the University of Pennsylvania's ['Parallel Plagues'](https://penntoday.upenn.edu/news/peru-and-us-considering-factors-drive-public-health) course this week. My presentations are linked below:       
   
   
-```{r xaringan_empty_islands, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+```{r xaringan_genomic_epi, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
 xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Parallel-plagues/covid_genomic_epi_slides.html", ratio = "16:9")
 
@@ -48,5 +48,14 @@ xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Parallel-plagues/c
 
 ```
 
+<br>
+
+```{r xaringan_molecular_evo, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Parallel-plagues/covid_molecular_evolution_slides.html", ratio = "16:9")
+
+
+
+```
 
 
