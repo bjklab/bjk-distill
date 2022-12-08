@@ -52,4 +52,4 @@ collections:
 rss:
   full_content: true
 output: distill::distill_article
-theme: theme_inferno_dark.css
+theme: theme_inferno_dark_gray.css
