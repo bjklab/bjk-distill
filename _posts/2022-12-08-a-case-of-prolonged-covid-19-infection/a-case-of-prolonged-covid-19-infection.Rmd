@@ -1,0 +1,50 @@
+---
+title: "A Case of Prolonged COVID-19 Infection"
+description: |
+  A recent case seen at the Hospital of the University of Pennsylvania. Presentation requested by the patient.
+author:
+  - name: Brendan J. Kelly 
+    url: https://github.com/bjklab
+    affiliation: University of Pennsylvania
+    affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+date: 2022-12-08
+preview: cover_slide.png
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "A Case of Prolonged COVID-19 Infection"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "A Case of Prolonged COVID-19 Infection",
+    url = "bjklab.org/posts/2022-12-08-a-case-of-prolonged-covid-19-infection.html",
+    image = "cover_slide.png",
+    image_alt = "The title slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
+
+```
+
+A recent case of prolonged COVID-19 infection complicated by organizing pneumonia:       
+  
+  
+```{r xaringan_prolonged_covid, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Case-of-Prolonged-SARS-CoV-2/case_of_prolonged_covid_slides.html", ratio = "16:9")
+
+
+
+```
+

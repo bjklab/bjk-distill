@@ -1,7 +1,7 @@
 ---
 title: "Genomic Epidemiology for COVID-19"
 description: |
-  A presentation to the 'Parallel Plagues' group at the University of Pennsylvania .
+  A presentation to the 'Parallel Plagues' group at the University of Pennsylvania.
 author:
   - name: Brendan J. Kelly 
     url: https://github.com/bjklab

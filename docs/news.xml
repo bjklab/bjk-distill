@@ -12,12 +12,21 @@
       <link>https://bjklab.github.io/bjk-distill/index.html</link>
     </image>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 29 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>A Case of Prolonged COVID-19 Infection</title>
+      <dc:creator>Brendan J. Kelly</dc:creator>
+      <link>https://bjklab.github.io/bjk-distill/index.html/posts/2022-12-08-a-case-of-prolonged-covid-19-infection</link>
+      <description>A recent case seen at the Hospital of the University of Pennsylvania. Presentation requested by the patient.</description>
+      <guid>https://bjklab.github.io/bjk-distill/index.html/posts/2022-12-08-a-case-of-prolonged-covid-19-infection</guid>
+      <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://bjklab.github.io/bjk-distill/index.html/posts/2022-12-08-a-case-of-prolonged-covid-19-infection/cover_slide.png" medium="image" type="image/png" width="1837" height="1030"/>
+    </item>
     <item>
       <title>Genomic Epidemiology for COVID-19</title>
       <dc:creator>Brendan J. Kelly</dc:creator>
       <link>https://bjklab.github.io/bjk-distill/index.html/posts/2022-11-29-genomic-epidemiology-for-covid-19</link>
-      <description>A presentation to the 'Parallel Plagues' group at the University of Pennsylvania .</description>
+      <description>A presentation to the 'Parallel Plagues' group at the University of Pennsylvania.</description>
       <guid>https://bjklab.github.io/bjk-distill/index.html/posts/2022-11-29-genomic-epidemiology-for-covid-19</guid>
       <pubDate>Tue, 29 Nov 2022 00:00:00 +0000</pubDate>
       <media:content url="https://bjklab.github.io/bjk-distill/index.html/posts/2022-11-29-genomic-epidemiology-for-covid-19/cover_slide.png" medium="image" type="image/png" width="1758" height="990"/>
