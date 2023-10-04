@@ -12,7 +12,7 @@ favicon: microscope_white.png
 
 ### mVACS: mRNA Vaccines for _C. difficile_ Suppression - Human Subjects Core (U19 AI174998 - Core C)    
   
-We are contributing to a collaborative center with multidisciplinary scientists working to develop mRNA vaccine candidates to address the threat posed by recurrent _C. difficile_ infection. The human subjects core is focused on developing a clinical biorepository and prospective cohort to identify populations in whom vaccination strategies against _C. difficile_ will be most beneficial. Biorepository progress report <a href="biorepo_reports/biorepository_report_mvacs.html" target="_blank">here</a>.   
+We are contributing to a collaborative center with multidisciplinary scientists working to develop mRNA vaccine candidates to address the threat posed by recurrent _C. difficile_ infection. The human subjects core is focused on developing a clinical biorepository and prospective cohort to identify populations in whom vaccination strategies against _C. difficile_ will be most beneficial. Biorepository progress report <a href="biorepo_reports/biorepository_report_mVACS.html" target="_blank">here</a>.   
   
   
 ### Fecal microbiota transplantation to address colonization and environmental contamination with multidrug-resistant organisms (FACE-MDRO) (CDC U54-CK000610)    
