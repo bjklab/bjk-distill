@@ -13,7 +13,7 @@
     "categories": [],
     "contents": "\nA recent case of prolonged COVID-19 infection complicated by organizing pneumonia:\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2022-12-08-a-case-of-prolonged-covid-19-infection/cover_slide.png",
-    "last_modified": "2022-12-13T14:57:15-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 1837,
     "preview_height": 1030
@@ -32,7 +32,7 @@
     "categories": [],
     "contents": "\nIt was a pleasure to join the University of Pennsylvania’s ‘Parallel Plagues’ course this week. My presentations are linked below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2022-11-29-genomic-epidemiology-for-covid-19/cover_slide.png",
-    "last_modified": "2022-12-13T14:57:15-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 1758,
     "preview_height": 990
@@ -51,7 +51,7 @@
     "categories": [],
     "contents": "\nI was delighted to be invited to talk about unique considerations in designing microbiome trials at the Gut Microbiota for Health World Forum 2022, in Washington, DC. My presentation is linked below:\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2022-03-12-designing-microbiome-trials/cover_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 1230,
     "preview_height": 687
@@ -70,7 +70,7 @@
     "categories": [],
     "contents": "\nI had a great time visiting the Department of Medicine and Division of Infectious Diseases at Robert Wood Johnson Medical School, Rutgers University. I gave an update on my research, emphasizing work to understand and engineer post-antibiotic repopulation of gut and respiratory microbiota:\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2022-02-14-antibiotics-empty-islands/cover_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 1665,
     "preview_height": 928
@@ -89,7 +89,7 @@
     "categories": [],
     "contents": "\nThis week, COVID-19 cases have continued to rise in Philadelphia, Pennsylvania (4119 observed cases on December 28, 2021), despite incidence modelling that predicted a peak closer to 680 cases/day. I wanted to understand how case backfill, the process of updating COVID-19 daily case counts for up to a week after the initial daily case counts are recorded, might impact estimates of the COVID-19 reproductive number (Rt) and predictions of future COVID-19 incidence based on Rt. During the winter holiday season, short staffing may result in data entry and transfer delays that increase the impact of case backfill. To understand the holiday backfill effect, I compared the COVID-19 case data available for Philadelphia, Pennsylvania on 22 December 2021 to the case data available today, 3 January 2022:\n\n\n\nIn the top panel, the comparison of incidence data demonstrates that case backfill significantly increased cases in the week prior to December 22, 2021. In the bottom panel, the effect of this missing data to skew Rt below 1 can be seen. Rt was estimated using a mean serial interval of 2.2 days (SD 0.8 days), based on the best available data on the Omicron variant, via the EpiEstim R package. The median (line) and 95% confidence interval (shading) for the estimated Rt are shown.\nThe same model for Rt based on the most recent available data again suggests that Rt is trending down… but this should not be cause for excess optimism in light of the holiday backfill effect seen last week.\n\n\n\n",
     "preview": "posts/2022-01-03-watch-out-for-the-case-backfill/p_covid_backfill_combined_tp.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 2400,
     "preview_height": 1800
@@ -108,7 +108,7 @@
     "categories": [],
     "contents": "\nI was honored to present at the Eastern Pennsylvania American Society of Microbiology (ASM) 50th Annual Symposium. Here are the slides from my presentation:\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2021-11-05-deep-sequencing-for-respiratory-pathogen-detection-and-infection-diagnosis/cover_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 2522,
     "preview_height": 1419
@@ -127,7 +127,7 @@
     "categories": [],
     "contents": "\nI was asked to give a brief summary of my research program to the Department of Biostatistics, Epidemiology, and Informatics at Penn:\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2021-04-01-a-brief-overview-of-my-research/cover_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 2246,
     "preview_height": 1262
@@ -146,7 +146,7 @@
     "categories": [],
     "contents": "\nToday I had the opportunity to discuss SARS-CoV-2 transmission among kids and adults, drawing on a recent seroprevalence study. It was a pleasure to join the Penn DBEI’s Population Science journal club. My slides are attached here.\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2021-03-31-covid-19-in-kids-and-adults/cover_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 2246,
     "preview_height": 1262
@@ -165,7 +165,7 @@
     "categories": [],
     "contents": "\nToday I gave a short talk on the development of fecal microbiota transplantation (FMT) methods and how FMT can be applied to oncology patients at risk for chemotherapy/antibiotic-related intestinal microbiota disruption and graft-versus-host-disease (GVHD).\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2021-03-25-fmt-update-for-transplant-oncology/cover_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 2248,
     "preview_height": 1262
@@ -184,7 +184,7 @@
     "categories": [],
     "contents": "\nI had reason to go back to an update on fecal microbiota transplantation (FMT) that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2021-03-03-update-on-fecal-microbiota-transplantation/cover_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 2250,
     "preview_height": 1262
@@ -203,7 +203,7 @@
     "categories": [],
     "contents": "\nI had reason to go back to a C. difficile clinical update that I gave recently. Now slightly out-of-date, but perhaps still useful:\n\n\n\n\n\n\n\n\n",
     "preview": "posts/2021-02-18-c-difficile-clinical-update/objectives_slide.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 2242,
     "preview_height": 1258
@@ -222,7 +222,7 @@
     "categories": [],
     "contents": "\n\n\n\n",
     "preview": "posts/2021-01-16-welcome/lower_respiratory.png",
-    "last_modified": "2022-11-10T14:36:44-05:00",
+    "last_modified": "2023-05-31T12:28:42-04:00",
     "input_file": {},
     "preview_width": 1750,
     "preview_height": 1270
