@@ -6,10 +6,13 @@ favicon: microscope_white.png
 
 ```{r xaringan_extra_intro_epi, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
 
-xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Measures-of-Disease-in-Epidemiology/measures_of_disease_in_epidemiology_2022_bjk.html",
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Measures-of-Disease-in-Epidemiology/measures_of_disease_in_epidemiology_2023_bjk.html",
                               ratio = "16:9")
 
 
 
 ```
-
+  
+[Measures of Disease in Epidemiology](https://bjklab.github.io/Measures-of-Disease-in-Epidemiology/measures_of_disease_in_epidemiology_2023_bjk.html)
+  
+  
