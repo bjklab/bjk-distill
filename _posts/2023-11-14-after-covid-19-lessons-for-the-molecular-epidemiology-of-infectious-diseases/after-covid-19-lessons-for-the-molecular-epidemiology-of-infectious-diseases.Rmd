@@ -1,0 +1,53 @@
+---
+title: "After COVID-19: Lessons for the Molecular Epidemiology of Infectious Diseases"
+description: |
+  A presentation to the 'Parallel Plagues' group at the University of Pennsylvania.
+author:
+  - name: Brendan J. Kelly 
+    url: https://github.com/bjklab
+    affiliation: University of Pennsylvania
+    affiliation_url: https://www.cceb.med.upenn.edu/bio/brendan-j-kelly-md-msce
+date: 2023-11-14
+preview: cover_slide.png
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE, error = FALSE)
+library(metathis)
+meta() %>%
+  meta_description(
+    "After COVID-19: Lessons for the Molecular Epidemiology of Infectious Diseases"
+  ) %>% 
+  meta_name("github-repo" = "bjklab/") %>% 
+  meta_viewport() %>% 
+  meta_social(
+    title = "After COVID-19: Lessons for the Molecular Epidemiology of Infectious Diseases",
+    url = "bjklab.org/posts/2023-11-14-after-covid-19-lessons-for-the-molecular-epidemiology-of-infectious-diseases.html",
+    image = "cover_slide.png",
+    image_alt = "The title slide",
+    og_type = "blog",
+    og_author = "Brendan J. Kelly",
+    twitter_card_type = "summary",
+    twitter_creator = "@bjk_lab"
+  )
+
+```
+
+It was again a pleasure join the University of Pennsylvania's ['Parallel Plagues'](https://penntoday.upenn.edu/news/peru-and-us-considering-factors-drive-public-health) course. This week, we spoke about lessons and directions for the molecular epidemiology of infectious diseases from the COVID-19 pandemic:       
+  
+```{r xaringan_after_covid_19, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE}
+
+xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Parallel-plagues/after_covid_19_slides.html", ratio = "16:9")
+
+
+
+```
+
+After COVID-19: Lessons for the Molecular Epidemiology of Infectious Diseases ([html](https://bjklab.github.io/Parallel-plagues/after_covid_19_slides.html) & [pdf](https://bjklab.github.io/Parallel-plagues/after_covid_19_slides.pdf))
+  
+
+

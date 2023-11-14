@@ -1,5 +1,24 @@
 [
   {
+    "path": "posts/2023-11-14-after-covid-19-lessons-for-the-molecular-epidemiology-of-infectious-diseases/",
+    "title": "After COVID-19: Lessons for the Molecular Epidemiology of Infectious Diseases",
+    "description": "A presentation to the 'Parallel Plagues' group at the University of Pennsylvania.",
+    "author": [
+      {
+        "name": "Brendan J. Kelly",
+        "url": "https://github.com/bjklab"
+      }
+    ],
+    "date": "2023-11-14",
+    "categories": [],
+    "contents": "\nIt was again a pleasure join the University of Pennsylvania’s ‘Parallel Plagues’ course. This week, we spoke about lessons and directions for the molecular epidemiology of infectious diseases from the COVID-19 pandemic:\n\n\n\n\n\nAfter COVID-19: Lessons for the Molecular Epidemiology of Infectious Diseases (html & pdf)\n\n\n\n",
+    "preview": "posts/2023-11-14-after-covid-19-lessons-for-the-molecular-epidemiology-of-infectious-diseases/cover_slide.png",
+    "last_modified": "2023-11-14T00:58:07-05:00",
+    "input_file": {},
+    "preview_width": 2846,
+    "preview_height": 1558
+  },
+  {
     "path": "posts/2022-12-08-a-case-of-prolonged-covid-19-infection/",
     "title": "A Case of Prolonged COVID-19 Infection",
     "description": "A recent case seen at the Hospital of the University of Pennsylvania. Presentation requested by the patient.",
