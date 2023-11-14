@@ -13,6 +13,6 @@ xaringanExtra::embed_xaringan(url = "https://bjklab.github.io/Measures-of-Diseas
 
 ```
   
-[Measures of Disease in Epidemiology](https://bjklab.github.io/Measures-of-Disease-in-Epidemiology/measures_of_disease_in_epidemiology_2023_bjk.html)
+Measures of Disease in Epidemiology ([html](https://bjklab.github.io/Measures-of-Disease-in-Epidemiology/measures_of_disease_in_epidemiology_2023_bjk.html) & [pdf](https://bjklab.github.io/Measures-of-Disease-in-Epidemiology/measures_of_disease_in_epidemiology.pdf))
   
   
