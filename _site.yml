@@ -33,7 +33,7 @@ navbar:
           href: microbiome_measures.html
     - text: "News"
       menu:
-        - text: "Blog"
+        - text: "News"
           href: news.html
         - text: "MOTION Meetings"
           href: lab_schedule.html
