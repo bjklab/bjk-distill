@@ -1,5 +1,5 @@
 ---
-title: "Under Review"
+title: "MOTION Lab Agenda"
 site: distill::distill_website
 favicon: microscope_white.png
 ---
@@ -29,6 +29,7 @@ discussion_topics_tib |>
 
 discussion_topics_tib |> 
   gt() |> 
+  gt::sub_missing() |> 
   gt_black_grey() %>%
   gt::tab_options(column_labels.font.size = 16)
 
