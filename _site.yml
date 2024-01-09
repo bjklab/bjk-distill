@@ -32,7 +32,11 @@ navbar:
         - text: "Microbiome Measures"
           href: microbiome_measures.html
     - text: "News"
-      href: news.html
+      menu:
+        - text: "Blog"
+          href: news.html
+        - text: "MOTION Lab"
+          href: discussion_topics.html
     - icon: fa fa-rss
       href: news.xml
     - icon: fab fa-twitter

@@ -1,0 +1,40 @@
+---
+title: "Under Review"
+site: distill::distill_website
+favicon: microscope_white.png
+---
+
+```{r, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE, layout="l-body-outset", fig.width=6}
+
+#' #################################
+#' load libraries and set seed
+#' #################################
+library(tidyverse)
+library(gt)
+
+#' add gt formatting functions
+source("./scripts/gt_themes.R")
+
+
+#' #################################
+#'  read and format citation data
+#' #################################
+
+read_csv(file = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTjJNeBJ2kqxHJTnhXWrLUyvgHnfJQwKDgu1fuAuIqFsrRdScvyhAIAzoC61c0nqT_UJZBdNOSPF84k/pub?gid=0&single=true&output=csv") %>%
+  identity() -> discussion_topics_tib
+#discussion_topics_tib
+
+discussion_topics_tib |> 
+  write_csv("discussion_topics/discussion_topics.csv")
+
+discussion_topics_tib |> 
+  gt() |> 
+  gt_black_grey() %>%
+  gt::tab_options(column_labels.font.size = 16)
+
+
+
+
+
+```
+
