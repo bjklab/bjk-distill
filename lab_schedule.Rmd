@@ -1,0 +1,41 @@
+---
+title: "MOTION Lab Meeting Schedule"
+site: distill::distill_website
+favicon: microscope_white.png
+---
+
+```{r, eval=TRUE, warning=FALSE, message=FALSE, echo=FALSE, layout="l-body-outset", fig.width=6}
+
+#' #################################
+#' load libraries and set seed
+#' #################################
+library(tidyverse)
+library(gt)
+library(gtExtras)
+
+#' add gt formatting functions
+#source("./scripts/gt_themes.R")
+
+
+#' #################################
+#'  read and format citation data
+#' #################################
+
+read_csv(file = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQzKebqOHpuFtCtut0gSbyG4EtOPb7uaktDXLFuEQRxMxO0sxjHMz-UftlWGthILmmMUmmgovITXuL_/pub?gid=0&single=true&output=csv") %>%
+  identity() -> motion_lab_schedule
+#motion_lab_schedule
+
+motion_lab_schedule |> 
+  write_csv("discussion_topics/motion_lab_schedule.csv")
+
+motion_lab_schedule |> 
+  gt() |> 
+  gt::sub_missing() |> 
+  gtExtras::gt_theme_nytimes()
+
+
+
+
+
+```
+

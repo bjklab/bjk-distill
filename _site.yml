@@ -35,7 +35,9 @@ navbar:
       menu:
         - text: "Blog"
           href: news.html
-        - text: "MOTION Lab"
+        - text: "MOTION Meetings"
+          href: lab_schedule.html
+        - text: "MOTION Agenda"
           href: discussion_topics.html
     - icon: fa fa-rss
       href: news.xml
