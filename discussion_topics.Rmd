@@ -11,9 +11,10 @@ favicon: microscope_white.png
 #' #################################
 library(tidyverse)
 library(gt)
+library(gtExtras)
 
 #' add gt formatting functions
-source("./scripts/gt_themes.R")
+#' source("./scripts/gt_themes.R")
 
 
 #' #################################
@@ -30,8 +31,7 @@ discussion_topics_tib |>
 discussion_topics_tib |> 
   gt() |> 
   gt::sub_missing() |> 
-  gt_black_grey() %>%
-  gt::tab_options(column_labels.font.size = 16)
+  gtExtras::gt_theme_nytimes()
 
 
 
