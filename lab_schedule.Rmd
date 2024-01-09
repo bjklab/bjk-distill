@@ -35,7 +35,7 @@ motion_lab_schedule |>
   gt_color_rows(
     Focus, 
     palette = "viridis::turbo", 
-    domain = range(motion_lab_schedule$Focus),
+    domain = as.factor(motion_lab_schedule$Focus),
     pal_type = "discrete"
    )
 
