@@ -32,12 +32,13 @@ motion_lab_schedule |>
   gt() |> 
   gt::sub_missing() |> 
   gtExtras::gt_theme_nytimes() |> 
-  gt_color_rows(
-    Focus, 
-    palette = "viridis::turbo", 
-    domain = as.factor(motion_lab_schedule$Focus),
-    pal_type = "discrete"
-   )
+  gtExtras::gt_highlight_rows(rows = Focus == "ASPIRE-MOTION Joint Meeting", fill = "lightgrey", target_col = "Focus", font_weight = "normal")
+#   gt_color_rows(
+#     Focus, 
+#     palette = "viridis::turbo", 
+#     domain = as.factor(motion_lab_schedule$Focus),
+#     pal_type = "discrete"
+#    )
 
 
 
